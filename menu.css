@@ -1,0 +1,33 @@
+/* Created by Joachim Jahr*/
+.menu_bar{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: wheat;
+}
+
+
+.menu {
+
+}
+
+.menu_row{
+    z-index: 5;
+}
+
+.menu_item{
+    margin: 5px 0 5px 10px;
+    position: static;
+    display: inline-block;
+}
+
+.menu_column{
+    background-color: #dfbc79;
+    margin: 10px 5px 0 15px;
+    visibility: hidden;
+}
+
+.menu-column-item{
+    color: red;
+}
+
