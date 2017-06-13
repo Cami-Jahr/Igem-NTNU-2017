@@ -1,7 +1,7 @@
 .logo_bar{
     height: 100px;
     display: block;
-    margin: 0 0 20px 0;
+    margin: 0 0 0 0;
 }
 .logo_bar img{
     max-width:100%;
@@ -9,4 +9,5 @@
     margin: 0;
     border: 0;
     padding: 0;
+
 }

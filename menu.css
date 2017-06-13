@@ -12,13 +12,14 @@
 }
 
 .menu_row{
-    z-index: 5;
+
 }
 
 .menu_item{
     margin: 5px 0 5px 10px;
     position: static;
     display: inline-block;
+    width: 200px;
 }
 
 .menu_column{
@@ -27,7 +28,14 @@
     visibility: hidden;
 }
 
-.menu-column-item{
-    color: red;
+.menu_column_item{
+    color: cornsilk;;
 }
 
+/*.menu_row_body:hover .menu_column{
+    visibility: visible;
+}*/
+
+.menu_row_body{
+    background-image: url("folder_body.png");
+}
