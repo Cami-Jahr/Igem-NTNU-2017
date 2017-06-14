@@ -1,0 +1,53 @@
+#global_container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#menu_field{
+    width: 100%;
+    color: greenyellow;
+    position: relative;
+    z-index: 0;
+}
+
+#triangle_topleft,
+#triangle_topright{
+    position: absolute;
+    z-index: -1;
+}
+#triangle_topleft > img,
+#triangle_topright > img{
+    width: 100%;
+    z-index: auto;
+}
+
+#triangle_topright {
+    width: 80%;
+    right: 0;
+}
+
+#triangle_topleft {
+    width: 30%;
+}
+
+#icon{
+    width: 24%;
+    position: absolute;
+    z-index: 0;
+}
+
+#icon > img{
+    z-index: auto;
+    width: 100%;
+}
+
+#boat{
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+}
+#boat > img{
+    z-index: auto;
+    width: 100%;
+}
+
