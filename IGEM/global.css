@@ -5,6 +5,6 @@
 }
 body {
     max-width:1920px;
-    background: url("border.png") no-repeat fixed;
+    background: url("border.png") repeat-y fixed;
     background-size: 100%;
 }
