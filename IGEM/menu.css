@@ -1,19 +1,20 @@
 #global_container{
     width: 70%;
     margin: 0 auto;
+    background-color: whitesmoke;
 }
 
 #menu_field{
     width: 100%;
     color: greenyellow;
     position: relative;
-    z-index: 0;
+    z-index: 2;
 }
 
 #triangle_topleft,
 #triangle_topright{
     position: absolute;
-    z-index: -1;
+    z-index: 1;
 }
 #triangle_topleft > img,
 #triangle_topright > img{
@@ -33,7 +34,7 @@
 #icon{
     width: 24%;
     position: absolute;
-    z-index: 0;
+    z-index: 2;
 }
 
 #icon > img{
@@ -44,7 +45,7 @@
 #boat{
     position: absolute;
     width: 100%;
-    z-index: -2;
+    z-index: 0;
 }
 #boat > img{
     z-index: auto;
