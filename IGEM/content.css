@@ -1,9 +1,9 @@
 .content{
+    position: relative;
 }
 
 .break_1{
     position: relative;
-    top: -8vh;
     z-index: 5;
     width: 100%;
 }
@@ -14,5 +14,4 @@
 }
 
 .text{
-    margin-top: 10vh;
 }
