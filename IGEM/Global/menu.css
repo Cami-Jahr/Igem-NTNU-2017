@@ -1,9 +1,13 @@
 #global_container{
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     background-color: whitesmoke;
     height: 100%;
-    min-width: 1500px;
+    min-width: 1000px;
+    max-width: 2000px;
+    border-width: 0 2px 0 2px;
+    border-style: solid;
+    border-color: black;
 }
 
 #menu_field{
