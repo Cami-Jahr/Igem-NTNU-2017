@@ -11,3 +11,4 @@ var pricture_field_resize = function () {
 
 window.onresize = pricture_field_resize;
 
+$(pricture_field_resize);
