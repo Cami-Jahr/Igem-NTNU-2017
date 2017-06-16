@@ -22,17 +22,22 @@
     margin: 5em auto;
 }
 
-.paragraph_img_right > img{
+.paragraph_img_right > div{
     float: right;
     width: 20%;
     margin-left: 10%;
 }
 
-.paragraph_img_left > img{
+.paragraph_img_left > div{
     float: left;
     width: 20%;
     margin-right: 10%;
 }
+.paragraph_img_left  > div > img,
+.paragraph_img_right > div > img{
+    width: 100%;
+}
+
 
 .paragraph_img_left  > p,
 .paragraph_img_right > p{
@@ -83,6 +88,10 @@
 
 .image{
     margin: 0 auto;
+    font-family: "Arial", sans-serif;
+    text-align:center;
+    display: block;
+    clear:both;
 }
 
 .image > img{
@@ -96,4 +105,63 @@
 .break_1 > img,
 .break_2 > img{
     width: 100%;
+}
+
+
+.dropdown_button{
+    cursor: pointer;
+    margin: 0 auto;
+    width: 10%;
+}
+.dropdown_button > img{
+    width: 100%;
+}
+
+
+.dropdown_button:hover > img{
+    content: url("../PNG/arrow_down_black.png");
+}
+
+
+.dragup_button{
+    cursor: pointer;
+    margin: 0 auto;
+    width: 10%;
+}
+.dragup_button > img{
+    width: 100%;
+    content: url("../PNG/arrow_up_grey.png");
+}
+
+.dragup_button:hover > img{
+    content: url("../PNG/arrow_up_black.png");
+}
+
+.dropdown_collapse{
+    width: 5ch;
+    margin: 0 auto;
+    text-decoration: underline;
+    color: blue;
+}
+.dropdown_collapse:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown_paragraph{
+    justify-content:center;
+    text-align: center;
+}
+
+.dropdown_text{
+    display: none;
+}
+
+.show_less{
+    display: none;
+}
+
+.slider_menu{
+    position: absolute;
+    z-index: 3;
 }
