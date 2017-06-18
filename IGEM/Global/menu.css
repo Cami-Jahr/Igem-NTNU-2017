@@ -9,7 +9,8 @@
 #cssmenu,
 #cssmenu ul,
 #cssmenu li,
-#cssmenu a {
+#cssmenu a,
+#cssmenu div{
     border: none;
     line-height: 1;
     margin: 0;
@@ -36,7 +37,8 @@
     padding: 0;
 }
 
-#cssmenu > ul > li > a {
+#cssmenu > ul > li > a,
+#cssmenu > ul > li > div {
     outline: none;
     display: block;
     position: relative;
@@ -62,12 +64,12 @@
     border-color: #101417;
 }
 
-#cssmenu ul li.has-sub:hover > a:after {
+#cssmenu ul li.has-sub:hover > div:after {
     top: 0;
     bottom: 0;
 }
 
-#cssmenu > ul > li.has-sub > a:before {
+#cssmenu > ul > li.has-sub > div:before {
     content: "";
     position: absolute;
     top: 18px;
@@ -76,29 +78,29 @@
     border-top: 5px solid #ffffff;
 }
 
-#cssmenu > ul > li.has-sub:hover > a:before {
+#cssmenu > ul > li.has-sub:hover > div:before {
     top: 20px;
 }
 
-#cssmenu > ul > li.has-sub:hover > a {
+#cssmenu > ul > li.has-sub:hover > div {
     padding-bottom: 14px;
     z-index: 999;
     border-color: #3f3f3f;
 }
 
-#cssmenu ul li.has-sub:hover > ul,
-#cssmenu ul li.has-sub:hover > div {
+#cssmenu ul li.has-sub:hover > ul {
     display: block;
 }
 
 #cssmenu > ul > li > a:hover,
-#cssmenu > ul > li:hover > a {
+#cssmenu > ul > li > div:hover,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li:hover > div {
     background: #3f3f3f;
     border-color: #3f3f3f;
 }
 
-#cssmenu ul li > ul,
-#cssmenu ul li > div {
+#cssmenu ul li > ul {
     display: none;
     width: auto;
     position: absolute;
@@ -139,16 +141,11 @@
     background: #101417;
 }
 
-.active:hover > a,
-.active > a:hover{
-    background: #3f3f3f;
-}
-
 #cssmenu ul ul a:hover {
     color: #ffffff;
 }
 
-#cssmenu > ul > li.has-sub > a:hover:before {
+#cssmenu > ul > li.has-sub > div:hover:before {
     border-top: 5px solid #ffffff;
 }
 
