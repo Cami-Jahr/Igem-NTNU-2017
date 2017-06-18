@@ -1,7 +1,6 @@
-#slider{
+#menu{
     position: fixed;
     z-index: 9999;
-    color: #3dbd99;
     top: 20px;
     width:inherit;
     align-content: right;
@@ -62,10 +61,12 @@
     z-index: 99;
     border-color: #101417;
 }
+
 #cssmenu ul li.has-sub:hover > a:after {
     top: 0;
     bottom: 0;
 }
+
 #cssmenu > ul > li.has-sub > a:before {
     content: "";
     position: absolute;
@@ -74,23 +75,28 @@
     border: 5px solid transparent;
     border-top: 5px solid #ffffff;
 }
+
 #cssmenu > ul > li.has-sub:hover > a:before {
     top: 20px;
 }
+
 #cssmenu > ul > li.has-sub:hover > a {
     padding-bottom: 14px;
     z-index: 999;
     border-color: #3f3f3f;
 }
+
 #cssmenu ul li.has-sub:hover > ul,
 #cssmenu ul li.has-sub:hover > div {
     display: block;
 }
+
 #cssmenu > ul > li > a:hover,
 #cssmenu > ul > li:hover > a {
     background: #3f3f3f;
     border-color: #3f3f3f;
 }
+
 #cssmenu ul li > ul,
 #cssmenu ul li > div {
     display: none;
@@ -102,6 +108,7 @@
     z-index: 999;
     padding: 10px 0;
 }
+
 #cssmenu ul li > ul {
     width: 150px;  /* Width of submenu fields*/
 }
@@ -113,6 +120,7 @@
     margin: 0;
     padding: 0;
 }
+
 #cssmenu ul li > ul li a {
     outline: none;
     display: block;
@@ -124,6 +132,7 @@
     margin: 0;
     padding: 8px 20px;
 }
+
 #cssmenu,
 #cssmenu ul ul > li:hover > a,
 #cssmenu ul ul li a:hover {
@@ -138,9 +147,11 @@
 #cssmenu ul ul a:hover {
     color: #ffffff;
 }
+
 #cssmenu > ul > li.has-sub > a:hover:before {
     border-top: 5px solid #ffffff;
 }
+
 .active{
     background: #3f3f3f;
 }
