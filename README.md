@@ -1,3 +1,5 @@
+To see the current web page go to https://joachim-j.github.io/
+
 ## Development site for the NTNU IGEM 2017 wiki
 
 ### GitHub use
