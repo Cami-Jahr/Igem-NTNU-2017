@@ -9,6 +9,7 @@ var pricture_field_resize = function () {
     $(".break_header").css("top",(-width * 0.05)+20);
 };
 
+//Call on window resize and document startup
 window.onresize = pricture_field_resize;
-
 $(pricture_field_resize);
+
