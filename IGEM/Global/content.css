@@ -160,8 +160,3 @@
 .show_less{
     display: none;
 }
-
-.slider_menu{
-    position: absolute;
-    z-index: 3;
-}
