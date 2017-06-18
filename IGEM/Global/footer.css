@@ -1,0 +1,28 @@
+.footer,
+.footer > img{
+    width: 100%;
+    display: block;
+}
+
+.footer p{
+    color: whitesmoke;
+    background-color: #101417;
+    text-align: center;
+}
+
+.footer_content{
+    color: whitesmoke;
+    background-color: #101417;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.footer_content > a{
+    width: 5%;
+    margin: 2.5% 2.5% 5% 2.5%;
+}
+
+.footer_content img{
+    width: 100%;
+}
