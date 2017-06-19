@@ -1,11 +1,21 @@
-##Development site for the NTNU IGEM 2017 wiki
+# Development site for the NTNU IGEM 2017 wiki
 
+## Known issues
+* Text formatting (```<strong>``` / ```<i>``` etc) not usable within ```<p>```. Home's ```<div class="paragraph_img_right>``` 
+allows this, but the text fills page after picture end. The funcions wanted needs to be specified for development to continue.
+
+
+## In works:
+* Picture sideshow on Home page
+
+## Editing web page tutorial 
 ### GitHub use
 1. If you do not have an account, create a GitHub account.
 2. Go to this page, and select the **Create new file** option. A new window with a text editor and the alert below will show up.
- > You’re creating a file in a project you don’t have write access to. Submitting a change will create the file in a new branch in your fork J-Jahr/Joachim-J.github.io, so you can send a pull request.
+ > You’re creating a file in a project you don’t have write access to. Submitting a change will create the file in a new branch in your fork J-Jahr/Joachim-J.github.io, so you can send a pull request.  
  
-You have now created a copy of the project at your own workspace, any changes you do will not affect the live web page
+You have now created a copy of the project at your own workspace, any changes you do will not affect the live web page.  
+
 3. Go to your own version of the repository, it can be found trough your profile, or by going to https://github.com/**Your_username**/Joachim-J.github.io
 4. Download the GitHub repository to you computer by using the **Clone or Download** option at the top right of the main page. Simply chose **Download as ZIP**.
 5. Open and edit your files as explained below
@@ -42,10 +52,10 @@ fields. Examples of all tags can be found in *basis.html*.
 
 The relevant tags are: 
  * ```<hN>``` The headline, where N is a number between 1 and 6. This is the headline with the lowest number being the
- largest text. 
+ largest text
  * ```<img src="">```  Adds an image to the location. The image location is given relative to 
- the html page. folders are entered with ```/```, and going "back" on folder is done by typing ```../```.
- * ```<p>``` A paragraph of text. 
+ the html page. folders are entered with ```/```, and going "back" on folder is done by typing ```../```
+ * ```<p>``` A paragraph of text. (Does currently not allow text formating such as ```<strong>``` and ```<i>```, see known issues)
  * ```<br>``` The newline (Enter) character in html
  * Most other relevant functions are described [here](https://www.w3schools.com/html/html_formatting.asp)
 
