@@ -102,32 +102,32 @@
     width: 100%;
 }
 
-.dropdown_button{
+.slidedown_button{
     cursor: pointer;
     margin: 0 auto;
     width: 10%;
 }
 
-.dropdown_button > img{
+.slidedown_button > img{
     width: 100%;
 }
 
-.dropdown_button:hover > img{
+.slidedown_button:hover > img{
     content: url("../PNG/arrow_down_black.png");
 }
 
-.dragup_button{
+.slideup_button{
     cursor: pointer;
     margin: 0 auto;
     width: 10%;
 }
 
-.dragup_button > img{
+.slideup_button > img{
     width: 100%;
     content: url("../PNG/arrow_up_grey.png");
 }
 
-.dragup_button:hover > img{
+.slideup_button:hover > img{
     content: url("../PNG/arrow_up_black.png");
 }
 
@@ -135,12 +135,13 @@
     width: 5ch;
     margin: 0 auto;
     text-decoration: underline;
-    color: blue;
+    color: #808080;
 }
 
 .dropdown_collapse:hover{
     text-decoration: none;
     cursor: pointer;
+    color: #101417;
 }
 
 .dropdown_paragraph{
@@ -154,4 +155,14 @@
 
 .show_less{
     display: none;
+}
+
+.show_more,
+.show_less{
+    color: #808080;
+}
+
+.slideup_button:hover .show_less,
+.slidedown_button:hover .show_more{
+    color: #101417;
 }

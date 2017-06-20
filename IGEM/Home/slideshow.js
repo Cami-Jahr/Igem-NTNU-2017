@@ -28,12 +28,12 @@ function showDivs(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" current_dot", "");
     }
-    $(active).fadeOut(300, function () {
-        $(x[slideIndex-1]).fadeIn(600);
+    $(active).fadeOut(500, function () {
+        $(x[slideIndex-1]).fadeIn(500);
     });
     dots[slideIndex-1].className += " current_dot";
     clearTimeout(Carousel_timer);
-    Carousel_timer = setTimeout(carousel, 10000); // wait 5 seconds for next automatic image change
+    Carousel_timer = setTimeout(carousel, 10000); // wait 10 seconds for next automatic image change
 }
 
 function carousel() { //Is called to change pictures automatically
