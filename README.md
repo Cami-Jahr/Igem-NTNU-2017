@@ -1,5 +1,7 @@
 # Development site for the NTNU IGEM 2017 wiki
 
+To see the current web page go to https://joachim-j.github.io/
+
 ## Known issues
 * Text formatting (```<strong>``` / ```<i>``` etc) not usable within ```<p>```. Home's ```<div class="paragraph_img_right>``` 
 allows this, but the text fills page after picture end. The funcions wanted needs to be specified for development to continue.
@@ -17,6 +19,7 @@ allows this, but the text fills page after picture end. The funcions wanted need
 You have now created a copy of the project at your own workspace, any changes you do will not affect the live web page.  
 
 3. Go to your own version of the repository, it can be found trough your profile, or by going to https://github.com/**Your_username**/Joachim-J.github.io
+
 4. Download the GitHub repository to you computer by using the **Clone or Download** option at the top right of the main page. Simply chose **Download as ZIP**.
 5. Open and edit your files as explained below
 6. Go to your GitHub repository and select **Upload files**. Drag all your files into your browser (It is important that you drag the top level files and folders into the browser (That would be whichever folder this file lies in), to not create duplicates of all the files.)
@@ -26,7 +29,7 @@ You can review your changes in the panel below if you wish to do so.
 9. Press **Create pull request** and add a comment about what you did. Try to keep it short, but descriptive, in case you wish to trace back the changes you did with this commit at a later stage. 
 
 
-###Editing the website
+### Editing the website
 1. Check to see if you have the latest version of the files at your computer, on **your** GitHub page, check if your repository is [behind master](IGEM/PNG/GitHub.png). Behind master means that the web page has been updated, and your version has not. 
 Ahead means that you have added changes which has not yet been added to the web page. If the page has not yet accepted your commit, be sure you have created a **pull request**, as described above.
 1. After downloading the files from GitHub, locate the html file you wish to edit. Initially the repository will only contain the almost empty *index.html* file, and the *Home.html* and *basis.html* files, located under *IGEM/HOME/*.
@@ -45,7 +48,7 @@ and change the content as you wish.
 5. Upload the new files to GitHub. Be vary not to write on the same subject as another person, 
 you will not see their edits until their code is commited to GitHub AND you download the new version.
 
-###HTML 101
+### HTML 101
 Html uses tags to describe the content of the page. The opening tags ```<x>``` (where x may be different letters or words, all with different functions), 
 indicates the start of a "Field" with special functions. This field usually lasts until the tag is closed ```</x>```, with a dash. Simply write within the desired 
 fields. Examples of all tags can be found in *basis.html*.   
@@ -54,11 +57,12 @@ The relevant tags are:
  * ```<hN>``` The headline, where N is a number between 1 and 6. This is the headline with the lowest number being the
  largest text
  * ```<img src="">```  Adds an image to the location. The image location is given relative to 
- the html page. folders are entered with ```/```, and going "back" on folder is done by typing ```../```
- * ```<p>``` A paragraph of text. (Does currently not allow text formating such as ```<strong>``` and ```<i>```, see known issues)
- * ```<br>``` The newline (Enter) character in html
+ the html page. folders are entered with ```/```, and going "back" on folder is done by typing ```../```. This does not need a closing tag.
+ * ```<p>``` A paragraph of text. 
+ * ```<br>``` The newline (Enter) character in html. This does not need a closing tag.
+
  * Most other relevant functions are described [here](https://www.w3schools.com/html/html_formatting.asp)
 
 ### Support
 If you have any questions, want some design changed on some pages, or discover any bugs, please do contact me 
-on JoachimJahr@hotmail.com, or on [facebook](https://www.facebook.com/joachim.jahr.5).
+by creating an issue here on my github, or contacting me directly on JoachimJahr@hotmail.com, or on [facebook](https://www.facebook.com/joachim.jahr.5).
