@@ -25,6 +25,7 @@ You have now created a copy of the project at your own workspace, any changes yo
 6. Go to your GitHub repository and select **Upload files**. Drag all your files into your browser (It is important that you drag the top level files and folders into the browser (That would be whichever folder this file lies in), to not create duplicates of all the files.)
 7. Press **Commit changes** and wait for upload.
 8. You will be directed to your repository. Here select **New pull request**. At the base fork (left side) select */Joachim-J/Joachim-J.github.io/*, and at the head fork (right side) select */__Your_username__/Joachim-J.github.io/*.
+Make sure the *Master* branch on both repositories are selected.
 You can review your changes in the panel below if you wish to do so. 
 9. Press **Create pull request** and add a comment about what you did. Try to keep it short, but descriptive, in case you wish to trace back the changes you did with this commit at a later stage. 
 
@@ -60,6 +61,10 @@ The relevant tags are:
  the html page. folders are entered with ```/```, and going "back" on folder is done by typing ```../```. This does not need a closing tag.
  * ```<p>``` A paragraph of text. 
  * ```<br>``` The newline (Enter) character in html. This does not need a closing tag.
+ *  ```<b>``` - Bold text
+ *  ```<i>``` - Italic text
+ * ```<sub>``` - Subscript text
+ * ```<sup>``` - Superscript text
 
  * Most other relevant functions are described [here](https://www.w3schools.com/html/html_formatting.asp)
 

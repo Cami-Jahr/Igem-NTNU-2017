@@ -37,12 +37,20 @@
 }
 
 
-.paragraph_img_left  > p,
-.paragraph_img_right > p{
-    display:flex;
+.paragraph_img_left  > p{
+    display: block;
     justify-content:center;
     align-items:center;
     width:70%;
+    margin: auto 0 auto auto;
+}
+
+.paragraph_img_right > p{
+    display: block;
+    justify-content:center;
+    align-items:center;
+    width:70%;
+    margin-left: 0;
 }
 
 .paragraph_img_left  > h1,

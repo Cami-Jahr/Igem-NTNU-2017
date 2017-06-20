@@ -18,7 +18,8 @@
     <link rel='stylesheet' type='text/css' href='../Global/menu.css'>
     <link rel='stylesheet' type='text/css' href='../Global/footer.css'>
     <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script type='text/javascript' src='picture_field__resize.js'></script>
+    <script type='text/javascript' src='picture_field_resize.js'></script>
+    <script type='text/javascript' src='slideshow.js'></script>
     <script type='text/javascript' src='../Global/show_more_text.js'></script>
     <link rel="shortcut icon" href="../PNG/small_inverted_icon.png">
     <title>Main Page</title>
@@ -142,8 +143,21 @@
         <div id="triangle_topleft">
             <img src="../SVG/top_left_triangle.svg">
         </div>
-        <div id="boat">
-            <img src="../PNG/boat2.png"> <!-- dimensions 1770x885 (2:1) must be honored -->
+        <div id="slideshow_container">
+            <!-- dimensions 2:1 must be honored for ALL pictures added to slideshow -->
+            <!-- One span must be added, with increased changeToDiv parameter if additional images are added -->
+            <img class="slideshow_picture" src="../PNG/boat2.png">
+            <img class="slideshow_picture" src="../JPG/stockimage1.jpg">
+            <img class="slideshow_picture" src="../JPG/stockimage2.jpg">
+            <img class="slideshow_picture" src="../JPG/stockimage3.jpg">
+            <div class="slider_select" style="width:100%">
+                <div class="arrow-left" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="arrow-right" onclick="plusDivs(1)">&#10095;</div>
+                <span class="dot current_dot" onclick="changeToDiv(1)"></span>
+                <span class="dot" onclick="changeToDiv(2)"></span>
+                <span class="dot" onclick="changeToDiv(3)"></span>
+                <span class="dot" onclick="changeToDiv(4)"></span>
+            </div>
         </div>
     </div>
 
@@ -158,22 +172,24 @@
                 <img src="../PNG/fag.png">
                 <p>Phage text</p>
             </div>
-            <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong> Morbi et faucibus leo. Nullam gravida nibh
-            lacus, eget consectetur quam pellentesque quis. Donec sit amet ultrices libero. Mauris mollis gravida
-            diam quis sollicitudin. Praesent viverra risus nisi, non egestas lorem iaculis elementum. Sed interdum
-            suscipit tellus sit amet scelerisque. Quisque gravida, elit a dictum gravida, lacus felis viverra nunc,
-            sit amet consequat metus erat vitae elit. Proin nec lectus leo. Mauris eget bibendum tortor. Donec velit
-            enim, efficitur feugiat imperdiet vel, facilisis ac ante. Curabitur a neque non augue congue convallis
-            et vitae eros. Nam et tristique est. Vestibulum eu rhoncus turpis. Duis sed laoreet ex, id consequat
-            diam.
-            <br><br>
-            Nullam purus dolor, rhoncus in magna ac, maximus cursus nisi. Etiam metus ipsum, ornare vitae eros ut,
-            semper sagittis nisl. Integer maximus porttitor risus nec lacinia. Curabitur velit erat, congue quis
-            tortor vel, mattis sagittis turpis. Morbi at tellus quis dui gravida imperdiet. Morbi ac malesuada
-            neque. Phasellus dignissim vitae arcu a consequat. Nunc dignissim a mauris vitae suscipit. Quisque
-            laoreet risus orci, at bibendum felis tempus nec. Cras euismod feugiat imperdiet. Praesent sagittis
-            velit in volutpat vestibulum. Fusce enim lectus, tincidunt tempus neque ut, efficitur euismod justo.
-            Donec faucibus eros volutpat ornare eleifend.
+            <p>
+                <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b> Morbi et faucibus leo. Nullam gravida nibh
+                lacus, eget consectetur quam pellentesque quis. Donec sit amet ultrices libero. Mauris mollis gravida
+                diam quis sollicitudin. Praesent viverra risus nisi, non egestas lorem iaculis elementum. Sed interdum
+                suscipit tellus sit amet scelerisque. Quisque gravida, elit a dictum gravida, lacus felis viverra nunc,
+                sit amet consequat metus erat vitae elit. Proin nec lectus leo. Mauris eget bibendum tortor. Donec velit
+                enim, efficitur feugiat imperdiet vel, facilisis ac ante. Curabitur a neque non augue congue convallis
+                et vitae eros. Nam et tristique est. Vestibulum eu rhoncus turpis. Duis sed laoreet ex, id consequat
+                diam.
+                <br><br>
+                <i>Nullam purus dolor, rhoncus in magna ac, maximus cursus nisi.</i> Etiam metus ipsum, ornare vitae eros ut,
+                semper sagittis nisl. Integer maximus porttitor risus nec lacinia. Curabitur velit erat, congue quis
+                tortor vel, mattis sagittis turpis. Morbi at tellus quis dui gravida imperdiet. Morbi ac malesuada
+                neque. Phasellus dignissim vitae arcu a consequat. Nunc dignissim a mauris vitae suscipit. Quisque
+                laoreet risus orci, at bibendum felis tempus nec. Cras euismod feugiat imperdiet. Praesent sagittis
+                velit in volutpat vestibulum. Fusce enim lectus, tincidunt tempus neque ut, efficitur euismod justo.
+                Donec faucibus eros volutpat ornare eleifend.
+            </p>
         </div>
 
         <div class="dropdown_paragraph">
@@ -220,14 +236,14 @@
                 <p>Standard IGEM text</p>
             </div>
             <p>
-                Morbi nisi tortor, maximus eget consequat ut, hendrerit et augue. Phasellus efficitur arcu luctus tortor
+                <sub>Morbi nisi tortor, maximus eget consequat ut, hendrerit et augue.</sub> Phasellus efficitur arcu luctus tortor
                 accumsan, at hendrerit arcu blandit. Vivamus diam felis, eleifend vitae sollicitudin eget, volutpat eget
                 velit. Praesent gravida erat et turpis elementum gravida. Donec a ligula id odio eleifend tincidunt eu
                 vel ex. Vestibulum a semper mi. Integer at rutrum odio. Sed in purus sed tellus vestibulum luctus vitae
                 vitae turpis. Pellentesque interdum turpis felis, eget sollicitudin nulla commodo id. Nulla ac urna ut
                 sapien maximus semper quis id ante.
                 <br><br>
-                Vestibulum facilisis aliquam accumsan. Phasellus facilisis lacinia dapibus. Ut dictum purus sed risus
+                <sup>Vestibulum facilisis aliquam accumsan. Phasellus facilisis lacinia dapibus.</sup> Ut dictum purus sed risus
                 porta lobortis. Suspendisse maximus posuere commodo. Duis pharetra sit amet sapien in convallis. Proin
                 ultricies luctus massa. Morbi tristique turpis eget turpis vulputate, a scelerisque magna scelerisque.
                 Nullam blandit rhoncus purus vel feugiat. Ut consequat nunc erat, sit amet sodales massa ultricies sit
