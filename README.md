@@ -3,12 +3,11 @@
 To see the current web page go to https://joachim-j.github.io/
 
 ## Known issues
-* Text formatting (```<strong>``` / ```<i>``` etc) not usable within ```<p>```. Home's ```<div class="paragraph_img_right>``` 
-allows this, but the text fills page after picture end. The funcions wanted needs to be specified for development to continue.
+* None
 
 
 ## In works:
-* Picture sideshow on Home page
+* None
 
 ## Editing web page tutorial 
 ### GitHub use
