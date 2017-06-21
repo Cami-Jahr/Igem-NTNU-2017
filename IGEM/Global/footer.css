@@ -43,3 +43,11 @@
 .sponsors img{
     width: 100%;
 }
+
+.sosial_media > p{
+    color: whitesmoke;
+    background-color: #101417;
+    text-align: left;
+    margin: 1% 2%;
+    font-size: 20px;
+}

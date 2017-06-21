@@ -66,6 +66,9 @@ Inside the ```<div class="content">``` there are multiple other ```<div>``` cont
     * The footer container is the end of the content field, and the bottom of the page.
 5. Finish your code, if new files are needed (like a Team.html page), create a copy the *basis.html* file, 
 and change the content as you wish. 
+6. Any changes to sponsors, menu etc. which should be reflected upon all pages should be made to the *basis.html* file, 
+and copied to all other files when such elements have been finalized. Importing templates into all files is not possible 
+without knowledge of the server structure ment to launch the web page.
 5. Upload the new files to GitHub. Be vary not to write on the same subject as another person, 
 you will not see their edits until their code is commited to GitHub AND you download the new version.
 
