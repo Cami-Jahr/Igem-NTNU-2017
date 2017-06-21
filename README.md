@@ -18,7 +18,6 @@ To see the current web page go to https://joachim-j.github.io/
 You have now created a copy of the project at your own workspace, any changes you do will not affect the live web page.  
 
 3. Go to your own version of the repository, it can be found trough your profile, or by going to https://github.com/**Your_username**/Joachim-J.github.io
-
 4. Download the GitHub repository to you computer by using the **Clone or Download** option at the top right of the main page. Simply chose **Download as ZIP**.
 5. Open and edit your files as explained below
 6. Go to your GitHub repository and select **Upload files**. Drag all your files into your browser (It is important that you drag the top level files and folders into the browser (That would be whichever folder this file lies in), to not create duplicates of all the files.)
@@ -31,7 +30,7 @@ You can review your changes in the panel below if you wish to do so.
 
 ### Editing the website
 1. Check to see if you have the latest version of the files at your computer, on **your** GitHub page, check if your repository is [behind master](IGEM/PNG/GitHub.png). Behind master means that the web page has been updated, and your version has not. 
-Ahead means that you have added changes which has not yet been added to the web page. If the page has not yet accepted your commit, be sure you have created a **pull request**, as described above.
+*Ahead* means that you have added changes which has not yet been added to the web page. If the page has not yet accepted your commit, be sure you have created a **pull request**, as described above.
 1. After downloading the files from GitHub, locate the html file you wish to edit. Initially the repository will only contain the almost empty *index.html* file, and the *Home.html* and *basis.html* files, located under *IGEM/HOME/*.
 2. Open the html file in your browser to inspect it, refreshing the webpage will be how you "compile" the html document as you work with it. 
 2. Open the html file with your editor of choice. A recommended simple editor is [Notepad++](https://notepad-plus-plus.org/download/v7.3.3.html), unless you wish to invest time into learning a more sophisticated editor.
@@ -43,7 +42,7 @@ Inside the ```<div class="content">``` there are multiple other ```<div>``` cont
     * The image container places a line-breaking image in the text.It contains the code ```style="width: 50%;margin-top: 5em"``` where width is the width of the page the picture should occupy, and might need to be changed depending on the picture.
     The ```margin-top``` is how much whitespace is added above the picture, if whitespace is needed below the picture, change it to ```margin-bottom```.
     * The footer container is the end of the content field, and the bottom of the page.
-5. Finish your code, if new files are needed (like a Team.html page), create a copy the Home.html file, 
+5. Finish your code, if new files are needed (like a Team.html page), create a copy the *basis.html* file, 
 and change the content as you wish. 
 5. Upload the new files to GitHub. Be vary not to write on the same subject as another person, 
 you will not see their edits until their code is commited to GitHub AND you download the new version.
