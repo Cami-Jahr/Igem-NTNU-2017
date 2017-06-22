@@ -37,6 +37,8 @@
     width: 19%;
     margin: 1% 2%;
     display: inline-block;
+    min-height: 50px;
+    vertical-align: bottom;
 }
 
 .sosial_media img,
