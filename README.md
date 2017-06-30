@@ -1,6 +1,6 @@
 # Development site for the NTNU IGEM 2017 wiki
 
-To see the development web page go to https://joachim-j.github.io  
+To see the development web page go to ~~https://joachim-j.github.io  ~~, development page is dead due to GitHub requireing https and IGEM not supporting https.  
 To see the live web page go to http://2017.igem.org/Team:NTNU_Trondheim  
 
 To see important updates to the workflow of the project refer to [this file](Important_updates.md)
