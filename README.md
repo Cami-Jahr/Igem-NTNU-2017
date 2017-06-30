@@ -105,6 +105,7 @@ if this convention is not honored the file may be deleted at any time by any use
 username. The files will be listed up, and the name colomn will list the name as ````T--NTNU_Trondheim--example_file.jpg (file)````.
 Right click the ```(file)``` and select ````copy link adress````. Insert it wherever you wish to insert the image, 
 the full url will look something like ````http://2017.igem.org/wiki/images/3/36/T--NTNU_Trondheim--example_file.jpg````.  
+**important, change the http to https, or it will not work to github.**
   
 **Page names:** To see the guidelines of the expected pages, and url's to be added to the menu, 
 see http://2017.igem.org/Judging/Pages_for_Awards.
