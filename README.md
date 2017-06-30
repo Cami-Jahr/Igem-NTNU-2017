@@ -1,13 +1,16 @@
 # Development site for the NTNU IGEM 2017 wiki
 
-To see the current web page go to https://joachim-j.github.io/
+To see the development web page go to https://joachim-j.github.io/  
+To see the live web page go to http://2017.igem.org/Team:NTNU_Trondheim/  
+
+To see important updates to the workflow of the project refer to [this file](Important_updates.md)
 
 ## Known issues
-* None
+* The live page is left aligned and generally offset to the right
 
 
 ## In works:
-* None
+* Make the live page look similar to the development page
 
 ## Editing web page tutorial 
 ### GitHub use
@@ -82,8 +85,7 @@ fields. Examples of all tags can be found in *basis.html*.
 The relevant tags are: 
  * ```<hN>``` The headline, where N is a number between 1 and 6. This is the headline with the lowest number being the
  largest text
- * ```<img src="">```  Adds an image to the location. The image location is given relative to 
- the html page. folders are entered with ```/```, and going "back" on folder is done by typing ```../```. This does not need a closing tag.
+ * ```<img src="">```  Adds an image to the location. Use the full URL of the uploaded image on IGEM sites.
  * ```<p>``` A paragraph of text. 
  * ```<br>``` The newline (Enter) character in html. This does not need a closing tag.
  *  ```<b>``` - Bold text
@@ -92,6 +94,20 @@ The relevant tags are:
  * ```<sup>``` - Superscript text
 
  * Most other relevant functions are described [here](https://www.w3schools.com/html/html_formatting.asp)
+
+### Use of IGEM site
+**Upload images:** Go to http://2017.igem.org/Special:Upload, select the file, and set the destination filename.
+The filename must follow the name convention of adding ```T--NTNU_Trondheim--``` at the beginning of the filename. 
+That is, the file ````example_file.jpg```` must have a destination filename of  ```T--NTNU_Trondheim--example_file.jpg```,
+if this convention is not honored the file may be deleted at any time by any user.  
+  
+**Find addresses of images you have uploaded:** Go to http://2017.igem.org/Special:ListFiles, and search for you own 
+username. The files will be listed up, and the name colomn will list the name as ````T--NTNU_Trondheim--example_file.jpg (file)````.
+Right click the ```(file)``` and select ````copy link adress````. Insert it wherever you wish to insert the image, 
+the full url will look something like ````http://2017.igem.org/wiki/images/3/36/T--NTNU_Trondheim--example_file.jpg````.  
+  
+**Page names:** To see the guidelines of the expected pages, and url's to be added to the menu, 
+see http://2017.igem.org/Judging/Pages_for_Awards.
 
 ### Support
 If you have any questions, want some design changed on some pages, or discover any bugs, please do contact me 
