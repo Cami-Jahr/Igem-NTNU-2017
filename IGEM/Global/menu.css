@@ -1,7 +1,7 @@
 #menu{
     position: fixed;
     z-index: 9999;
-    top: 20px;
+    top: 18px;
     width:inherit;
     align-content: right;
 }
@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
 }
+
 #cssmenu {
     height: 37px;
     display: block;

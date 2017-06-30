@@ -14,7 +14,7 @@
     width: 100%;
     position: relative;
     z-index: 2;
-    top: 57px; /*Igem(20px) + menu(37px)*/
+    top: 27px;
 }
 
 #triangle_topleft,
