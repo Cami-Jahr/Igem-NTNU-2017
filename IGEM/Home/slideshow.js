@@ -1,7 +1,3 @@
-/**
- * Created by Joachim on 20/06/2017.
- */
-
 var slideIndex = 1;
 var Carousel_timer;
 

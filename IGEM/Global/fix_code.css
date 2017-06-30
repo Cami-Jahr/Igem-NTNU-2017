@@ -42,3 +42,7 @@ div#mw-content-text h6{
 div#HQ_page p{
     text-align: inherit;
 }
+
+div.sosial_media > a{
+    padding: 0!important;
+}
