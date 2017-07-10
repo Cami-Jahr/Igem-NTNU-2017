@@ -113,7 +113,7 @@
 }
 
 .slidedown_button:hover > img{
-    content: url("../PNG/arrow_down_black.png");
+    content: url("http://2017.igem.org/wiki/images/3/3a/T--NTNU_Trondheim--arrow_down_black.png");
 }
 
 .slideup_button{
@@ -124,11 +124,11 @@
 
 .slideup_button > img{
     width: 100%;
-    content: url("../PNG/arrow_up_grey.png");
+    content: url("http://2017.igem.org/wiki/images/d/d2/T--NTNU_Trondheim--arrow_up_grey.png");
 }
 
 .slideup_button:hover > img{
-    content: url("../PNG/arrow_up_black.png");
+    content: url("http://2017.igem.org/wiki/images/8/85/T--NTNU_Trondheim--arrow_up_black.png");
 }
 
 .dropdown_collapse{
