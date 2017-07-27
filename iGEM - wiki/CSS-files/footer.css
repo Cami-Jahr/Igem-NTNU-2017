@@ -1,0 +1,55 @@
+.footer,
+.footer > img{
+    width: 100%;
+    display: block;
+}
+
+.footer p{
+    color: whitesmoke;
+    background-color: #101417;
+    text-align: center;
+}
+
+.footer_content{
+    color: whitesmoke;
+    background-color: #101417;
+    display:table;
+    min-height: 200px;
+    width: 100%;
+}
+
+.sosial_media{
+    width: 30%;
+    margin: 1% 2.5%;
+    float: right;
+    display: inline-block;
+}
+
+.sponsors{
+    width: 60%;
+    margin: 1% 2.5%;
+    float: left;
+    display: inline-block;
+}
+
+.sosial_media > a,
+.sponsors > a{
+    width: 19%;
+    margin: 1% 2%;
+    display: inline-block;
+    min-height: 50px;
+    vertical-align: bottom;
+}
+
+.sosial_media img,
+.sponsors img{
+    width: 100%;
+}
+
+.sosial_media > p{
+    color: whitesmoke;
+    background-color: #101417;
+    text-align: left;
+    margin: 1% 2%;
+    font-size: 20px;
+}
