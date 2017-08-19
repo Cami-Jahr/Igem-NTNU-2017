@@ -7,14 +7,7 @@
         grey: #808080
 -->
 <head>
-    <meta charset="UTF-8">
-    <!-- Preloaded elements which is added dynamically to the page, and as such might be needed before normally loaded -->
-    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/3/3a/T--NTNU_Trondheim--arrow_down_black.png">
-    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/8/85/T--NTNU_Trondheim--arrow_up_black.png">
-    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/d/d2/T--NTNU_Trondheim--arrow_up_grey.png">
-    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/4/4c/T--NTNU_Trondheim--IMG_8959.jpg">
-    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/e/e2/T--NTNU_Trondheim--IMG_8974.jpg">
-    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/7/75/T--NTNU_Trondheim--IMG_9887.jpg">
+	<meta charset="UTF-8">
     <!--stylesheets etc -->
     <link rel="stylesheet" type="text/css"
           href="http://2017.igem.org/Template:NTNU_Trondheim/CSS/global?action=raw&ctype=text/css" />
@@ -32,8 +25,6 @@
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
     <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/picture_field_resize?action=raw&ctype=text/javascript"></script>
-    <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/slideshow?action=raw&ctype=text/javascript"></script>
-    <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/show_more_text?action=raw&ctype=text/javascript"></script>
 </head>
 <body>
 <div id="page_content_container">
@@ -50,7 +41,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="has-sub active">
+                <li class="has-sub">
                     <div>
                         <span>
                             Project
@@ -112,7 +103,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class='has-sub'>
+                <li class='has-sub active'>
                     <div>
                         <span>
                             People
@@ -145,8 +136,7 @@
             </ul>
         </div>
     </div>
-	
-    <div id="picture_field">
+     <div id="picture_field">
         <div id="triangle_topright">
             <img src="http://2017.igem.org/wiki/images/e/e6/T--NTNU_Trondheim--top_right_triangle.svg">
         </div>
@@ -157,20 +147,10 @@
             <img src="http://2017.igem.org/wiki/images/7/74/T--NTNU_Trondheim--top_left_triangle.svg">
         </div>
         <div id="slideshow_container">
+            <!-- example of slideshow of 1, ie. only a picture. If you wish to make slideshow again, remember to comment
+            back the slideshow.js script in the head section-->
             <!-- dimensions 2:1 must be honored for ALL pictures added to slideshow -->
-            <!-- One span must be added, with increased changeToDiv parameter if additional images are added -->
-            <img class="slideshow_picture" src="http://2017.igem.org/wiki/images/2/28/T--NTNU_Trondheim--boat2.png">
-            <img class="slideshow_picture" src="http://2017.igem.org/wiki/images/4/4c/T--NTNU_Trondheim--IMG_8959.jpg">
-            <img class="slideshow_picture" src="http://2017.igem.org/wiki/images/e/e2/T--NTNU_Trondheim--IMG_8974.jpg">
-            <img class="slideshow_picture" src="http://2017.igem.org/wiki/images/7/75/T--NTNU_Trondheim--IMG_9887.jpg">
-            <div class="slider_select" style="width:100%">
-                <div class="arrow-left" onclick="plusDivs(-1)">&#10094;</div>
-                <div class="arrow-right" onclick="plusDivs(1)">&#10095;</div>
-                <span class="dot current_dot" onclick="changeToDiv(1)"></span>
-                <span class="dot" onclick="changeToDiv(2)"></span>
-                <span class="dot" onclick="changeToDiv(3)"></span>
-                <span class="dot" onclick="changeToDiv(4)"></span>
-            </div>
+            <img src="http://2017.igem.org/wiki/images/7/75/T--NTNU_Trondheim--IMG_9887.jpg">
         </div>
     </div>
 
@@ -179,29 +159,15 @@
             <img src="http://2017.igem.org/wiki/images/4/49/T--NTNU_Trondheim--splitter_header.svg">
         </div>
 
-        <div class="paragraph_img_right">
-            <h1>Lorem Ipsum 1</h1>
-            <div>
-                <img src="http://2017.igem.org/wiki/images/5/5c/T--NTNU_Trondheim--IGEM_logo_med_NTNU_v3_medium_transparent.png">
-                <p>Phage text</p>
-            </div>
+        <div class="paragraph_no_img">
+            <h1>Professional help</h1>
             <p>
-                <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b> Morbi et faucibus leo. Nullam gravida nibh
-                lacus, eget consectetur quam pellentesque quis. Donec sit amet ultrices libero. Mauris mollis gravida
-                diam quis sollicitudin. Praesent viverra risus nisi, non egestas lorem iaculis elementum. Sed interdum
-                suscipit tellus sit amet scelerisque. Quisque gravida, elit a dictum gravida, lacus felis viverra nunc,
-                sit amet consequat metus erat vitae elit. Proin nec lectus leo. Mauris eget bibendum tortor. Donec velit
-                enim, efficitur feugiat imperdiet vel, facilisis ac ante. Curabitur a neque non augue congue convallis
-                et vitae eros. Nam et tristique est. Vestibulum eu rhoncus turpis. Duis sed laoreet ex, id consequat
-                diam.
-                <br><br>
-                <i>Nullam purus dolor, rhoncus in magna ac, maximus cursus nisi.</i> Etiam metus ipsum, ornare vitae eros ut,
-                semper sagittis nisl. Integer maximus porttitor risus nec lacinia. Curabitur velit erat, congue quis
-                tortor vel, mattis sagittis turpis. Morbi at tellus quis dui gravida imperdiet. Morbi ac malesuada
-                neque. Phasellus dignissim vitae arcu a consequat. Nunc dignissim a mauris vitae suscipit. Quisque
-                laoreet risus orci, at bibendum felis tempus nec. Cras euismod feugiat imperdiet. Praesent sagittis
-                velit in volutpat vestibulum. Fusce enim lectus, tincidunt tempus neque ut, efficitur euismod justo.
-                Donec faucibus eros volutpat ornare eleifend.
+                We contacted experts in the field of infection control and medical microbiology, to get a
+				better understanding of the situation of antibiotics and resistant bacteria. It was important 
+				to get an opinion from the experts on the use of bacteriophages as an alternative to antibiotics.
+				We also communicated with a bacteriophage scientist to get his opinion on our project. By having 
+				a dialogue with the professionals we could reflect on the ethical, safety and sustainability of 
+				our research.
             </p>
         </div>
 
@@ -212,26 +178,89 @@
                 <p class="show_less">Show less</p>
             </div>
             <div class="dropdown_text">
-                <div class="paragraph_img_left">
-                    <h1>Lorem Ipsum 4</h1>
-                    <div>
-                        <img src="http://2017.igem.org/wiki/images/5/5c/T--NTNU_Trondheim--fag.png">
-                        <p>Black IGEM text</p>
-                    </div>
-                    <p>
-                        Nullam in hendrerit lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam
-                        sit amet turpis sit amet orci finibus ornare eget nec nibh. Nullam quis convallis neque, id
-                        facilisis enim. Morbi commodo interdum nisl, vitae egestas sem ultrices ac. Nam mollis ac velit
-                        nec vestibulum. Suspendisse interdum, orci ut fringilla faucibus, nunc ligula dignissim leo, id
-                        fringilla neque sapien sed risus. Cras ac metus suscipit, dignissim magna a, efficitur lacus.
-                        Donec maximus enim id est suscipit vulputate. Pellentesque finibus, enim eu ultricies interdum,
-                        diam quam eleifend elit, molestie dignissim enim sem at odio. Curabitur eget aliquet ipsum.
-                        Etiam sed neque lacinia, porttitor metus ut, dapibus lectus. Maecenas auctor congue sem id
-                        posuere. Maecenas vulputate, mi sed sollicitudin egestas, eros elit tincidunt urna, vitae
-                        consequat elit leo id dui. Sed tincidunt nibh eget quam lobortis, id ultricies quam pharetra.
-                        Sed ac nibh diam.
-                    </p>
-                </div>
+					<div class="image" style="width: 50%;margin-top: 5em">
+						<!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
+						<!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
+						<img src="http://2017.igem.org/wiki/images/d/d0/T--NTNU_Trondheim--Human_practice_1.jpg">
+						<p>Marianna and Sheida talking to senior consultant Bjørn Waagsbø.</p>
+					</div>
+
+					<div class="paragraph_no_img">
+						<h1>Infection Control Experts</h1>
+						<p>
+							We met Bjørn Waagsbø, a senior consultant at the department of infectious diseases and the leader of
+							the antibiotics-team at St. Olav’s Hospital in Trondheim, with the goal to gain more information about 
+							antibiotics and resistant bacteria. According to Waagsbø, Norway is to a small scale affected by resistant
+							bacteria. However, the most common resistant bacteria are Methicillin-resistant Staphylococcus areus (MRSA), 
+							Extended spectrum betalactamase (ESBL) and Vancomycin-resistant enterococci (VRE). Waagsbø pointed out that
+							typically health workers and some tourists that have been vacating in South-Europe are detected with these 
+							resistant bacteria. He further stated that resistance is a problem today because of prolonged and wrong use 
+							of antibiotics, people travelling and release of nonbiodegradable antibiotics in nature.
+							<br><br>
+							We explained the experimental details behind our project and Waagsbø was impressed by the idea, and thought 
+							it was cool that we wanted to do research on an existing technology. He concerned us with the issue with 
+							pharmaceutical companies that develop new broad spectrum antibiotics to earn profit, rather than expand on 
+							new ideas that are unrelated to antibiotics. The interesting part with phage therapy in his opinion was the 
+							specificity of phages and that it works in a completely different manner from antibiotics. This may open a door 
+							for personalized medical treatment.
+						</p>
+					</div>
+					
+					<div class="image" style="width: 50%;margin-top: 5em">
+						<!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
+						<!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
+						<img src="http://2017.igem.org/wiki/images/a/a4/T--NTNU_Trondheim--Human_practice_3.jpg">
+						<p>Professor Gunnar Skov Simonsen.</p>
+					</div>
+
+					<div class="paragraph_no_img">
+						<p>
+							We Emailed with Gunnar Skov Simonsen, a Professor of Clinical Mircobiology at the University of Tromsø and
+							Director of the Department of Microbiology and Infection Control at the University Hospital of North-Norway
+							in Tromsø. He is also in charge of Norm – The Norwegian Organization for Surveillance of Antimicrobial 
+							Resistance. We asked him, how can we prevent resistant microbes, in addition to use less antibiotics. 
+							According to Simonsen it is important to avoid the need of antibiotics by reducing the incidences of infections. 
+							This can be achieved by vaccination, clean water and infection control in hospitals. Other antibacterial 
+							strategies are antibacterial surfaces (metals, nano-paint) and antivirulence methods.
+							<br><br>
+							We also asked for his opinion for the use of phage therapy as an alternative to antibiotics. He wrote that 
+							phage therapy has many fans and sceptics. From his point of view phage therapy has its challenges with routine 
+							use in hospitals and resistance against phages is also an issue. However, he suggested that chronic infections 
+							may be treated with “personalized” phages that correspond to its host bacteria. Simonsen states that restrictive 
+							use of the antibiotics is completely necessary today, but in the future phage therapy may be a solution.
+						</p>
+					</div>
+					
+					<div class="image" style="width: 20%;margin-top: 5em">
+						<!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
+						<!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
+						<img src="http://2017.igem.org/wiki/images/3/34/T--NTNU_Trondheim--Human_practice_4.jpg">
+						<p>Marianna and Sheida talking to senior consultant Bjørn Waagsbø.</p>
+					</div>
+
+					<div class="paragraph_no_img">
+						<h1>Bacteriophage researcher</h1>
+						<p>
+							We talked to Hans Petter Kleppen on the phone. He took his PhD at the Norwegian University of Life Sciences 
+							(UMB). His thesis was entitled “Studies of bacteriophages infecting lactic acid bacteria of industrial food 
+							fermentations”. Today he is working as senior scientist at ADC Pharma AS, where he is studying phage therapy
+							on yersiniosis caused by the bacteria Yersinia ruckeri in Atlantic salmon.
+							<br><br>
+							Kleppen was thrilled that we were working with phages and was more than happy to help us. He gave us useful 
+							information, literature recommendation and new perspectives to review, such as the kind of favourable traits 
+							we want the phages to evolve. He also explained the procedures that would favour lytic versus lysogenic cycles 
+							that was important to consider, and mentioned that addition of magnesium or calcium was good for the growth of
+							phages.
+							<br><br>
+							We also talked about the pros and cons of phage therapy. According to Kleppen, phage therapy is an effective 
+							agent against multi-resistant bacteria, because the mechanism behind developing resistance in bacteria has no 
+							correlation to phages. This is the main advantage of phage therapy. Another benefit of phages is that they are 
+							specific and will only grow in their host bacteria, and in this way, leave other bacteria unaffected. The 
+							drawback of phage therapy is that the disease-causing bacteria must be identified, leading to strict diagnostic 
+							requirements.
+						</p>
+					</div>
+					
                 <div class="dropdown_collapse">
                     Hide
                 </div>

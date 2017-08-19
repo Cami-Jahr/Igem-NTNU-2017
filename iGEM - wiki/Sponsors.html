@@ -7,11 +7,7 @@
         grey: #808080
 -->
 <head>
-    <meta charset="UTF-8">
-    <!-- Preloaded elements which is added dynamically to the page, and as such might be needed before normally loaded -->
-    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/4/4c/T--NTNU_Trondheim--IMG_8959.jpg">
-    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/e/e2/T--NTNU_Trondheim--IMG_8974.jpg">
-    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/7/75/T--NTNU_Trondheim--IMG_9887.jpg">
+	<meta charset="UTF-8">
     <!--stylesheets etc -->
     <link rel="stylesheet" type="text/css"
           href="http://2017.igem.org/Template:NTNU_Trondheim/CSS/global?action=raw&ctype=text/css" />
@@ -29,7 +25,6 @@
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
     <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/picture_field_resize?action=raw&ctype=text/javascript"></script>
-    <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/slideshow?action=raw&ctype=text/javascript"></script>
 </head>
 <body>
 <div id="page_content_container">
@@ -37,7 +32,7 @@
         <div id='cssmenu'>
             <!-- Is ordered left to right! -->
             <ul>
-                <li class='active'>
+                <li>
                     <a href='http://2017.igem.org/Team:NTNU_Trondheim'>
                         <div>
 							<span>
@@ -108,7 +103,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class='has-sub'>
+                <li class='has-sub active'>
                     <div>
                         <span>
                             People
@@ -141,7 +136,7 @@
             </ul>
         </div>
     </div>
-    <div id="picture_field">
+     <div id="picture_field">
         <div id="triangle_topright">
             <img src="http://2017.igem.org/wiki/images/e/e6/T--NTNU_Trondheim--top_right_triangle.svg">
         </div>
@@ -152,20 +147,10 @@
             <img src="http://2017.igem.org/wiki/images/7/74/T--NTNU_Trondheim--top_left_triangle.svg">
         </div>
         <div id="slideshow_container">
+            <!-- example of slideshow of 1, ie. only a picture. If you wish to make slideshow again, remember to comment
+            back the slideshow.js script in the head section-->
             <!-- dimensions 2:1 must be honored for ALL pictures added to slideshow -->
-            <!-- One span must be added, with increased changeToDiv parameter if additional images are added -->
-            <img class="slideshow_picture" src="http://2017.igem.org/wiki/images/2/28/T--NTNU_Trondheim--boat2.png">
-            <img class="slideshow_picture" src="http://2017.igem.org/wiki/images/4/4c/T--NTNU_Trondheim--IMG_8959.jpg">
-            <img class="slideshow_picture" src="http://2017.igem.org/wiki/images/e/e2/T--NTNU_Trondheim--IMG_8974.jpg">
-            <img class="slideshow_picture" src="http://2017.igem.org/wiki/images/7/75/T--NTNU_Trondheim--IMG_9887.jpg">
-            <div class="slider_select" style="width:100%">
-                <div class="arrow-left" onclick="plusDivs(-1)">&#10094;</div>
-                <div class="arrow-right" onclick="plusDivs(1)">&#10095;</div>
-                <span class="dot current_dot" onclick="changeToDiv(1)"></span>
-                <span class="dot" onclick="changeToDiv(2)"></span>
-                <span class="dot" onclick="changeToDiv(3)"></span>
-                <span class="dot" onclick="changeToDiv(4)"></span>
-            </div>
+            <img src="http://2017.igem.org/wiki/images/7/75/T--NTNU_Trondheim--IMG_9887.jpg">
         </div>
     </div>
 
@@ -174,41 +159,32 @@
             <img src="http://2017.igem.org/wiki/images/4/49/T--NTNU_Trondheim--splitter_header.svg">
         </div>
 
-        <div class="paragraph_img_right">
-            <h1>Welcome!</h1>
-            <div>
-                <img src="http://2017.igem.org/wiki/images/5/5c/T--NTNU_Trondheim--IGEM_logo_med_NTNU_v3_medium_transparent.png">	<!-- Should be somewhat bigger -->
-            </div>
+        <div class="paragraph_no_img">
+            <h1>Sponsors</h1>
             <p>
-                Welcome to our website for iGEM 2017! We represent The Norwegian University of Science and Technology (NTNU) 
-				at this global competition in synthetic biology. We are a group of 8 students, both over graduate and 
-				undergraduate, working together on a research project throughout the summer with the final presentation of 
-				our achievements at the start of November in Boston!
-				<br><br>
-				With our project we aim to face the approaching challenge of antibiotics resistance by taking a closer look 
-				into the exciting area of phage-therapy. Our goal is to develop an efficient way of selecting bacteriophages 
-				(a type of virus) for killing specific bacteria. See "Project Description" for more details.
+                Our sincerest thanks to everyone who helped to fund our project. Without their support, 
+				none of what we have achieved would have been possible.
             </p>
         </div>
 
-        <div class="break_2">
+
+        <div class="break_1">
             <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
         </div>
 
-        <div class="paragraph_img_left">
-            <div>
-                <img src="http://2017.igem.org/wiki/images/d/d7/T--NTNU_Trondheim--Phage_under_construction.png">
-                <p>Phage under constuction</p>
-            </div> 
-			<h1>Page under construction</h1>
+		<div class="image" style="width: 50%;margin-top: 5em">
+            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
+            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
+            <img src="http://2017.igem.org/wiki/images/8/8a/T--NTNU_Trondheim--IBT-logo_light_version.jpg">
+        </div>
+		
+        <div class="paragraph_no_img">
             <p>
-               This page is currently under construction! You might therefore expect changes from time to time, as well as 
-			   minor glitches. Not all sub-pages will be available at once and the content might change. The construction 
-			   work has an absolute deadline at the 1<sup>st</sup> of September. We thank you for your patience and hope you 
-			   find this site both informative and easy to navigate.
-			   <br><br>
-			   Should you have any feedback or other questions don't hesitate to contact us! Se contact information 
-			   at the bottom of the page.
+                <b>The Department for Biotechnology and Food Science</b> is one of the eight departments at 
+				the Faculty of Natural Sciences at our university (NTNU), and they have provided our
+				iGEM team with funding and laboratory space during the project. We would also like to 
+				thank the members of the department that contributed with their knowledge, 
+				encouragement and support!
             </p>
         </div>
 
@@ -220,23 +196,103 @@
         <div class="image" style="width: 50%;margin-top: 5em">
             <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
             <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/1/1f/T--NTNU_Trondheim--Jump_with_Sheida.jpg">
-            <p>Our team, leaping for the sky.</p>
+            <img src="http://2017.igem.org/wiki/images/0/04/T--NTNU_Trondheim--DLN_white_version.png">
         </div>
-
+		
         <div class="paragraph_no_img">
-            <h1>Sponsors</h1>
             <p>
-                Making phages require hard work - and money! We are therefore very grateful to our sponsors that make such 
-				an important contribution to our project, showing both interest and support. Our university (NTNU) supply 
-				us with both access to lab and advisors, yet to be able to properly compete in the iGEM contest we rely on 
-				both expensive lab-equipment and tickets to The Giant Jamboree in Boston.
-				<br><br>
-				Should you be interested in helping us on the way, or got any other questions, don't hesitate to contact us! 
-				Se contact information below.
+                <b>The Centre for Digital Life Norway (DLN)</b> is a national centre for biotechnology education, 
+				research, and innovation. It is run as a collaborative project by the University of Oslo, 
+				the University of Bergen and NTNU, supported by the Norwegian Research Council. DLN is a 
+				virtual centre, currently involving twelve major research projects, with a constantly 
+				increasing portfolio as projects are welcome to join the centre. Thanks to DLN for their 
+				funding to our project! 
             </p>
         </div>
 		
+		
+		<div class="break_1">
+            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
+        </div>
+
+        <div class="image" style="width: 50%;margin-top: 5em">
+            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
+            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
+            <img src="http://2017.igem.org/wiki/images/f/ff/T--NTNU_Trondheim--Vectron-logo_White_version.png">
+        </div>
+		
+        <div class="paragraph_no_img">
+            <p>
+                <b>Vectron Biosolutions</b> was founded in 2008 as a result of more than 15 years of research in
+				Prof. Svein Valla's research group at Department of Biotechnology at NTNU. The research lead 
+				to an innovative technology for production of recombinant proteins that can be used for higher 
+				protein production levels at lower costs, and is Vectron’s core technology today. Thanks to 
+				Vectron Biosolutions for their funding to our project!
+            </p>
+        </div>
+		
+		
+        <div class="break_1">
+            <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
+        </div>
+		
+        <div class="image" style="width: 40%;margin-top: 5em">
+            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
+            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
+            <img src="http://2017.igem.org/wiki/images/e/e8/T--NTNU_Trondheim--NBS-logo_white_version.png">
+        </div>
+		
+        <div class="paragraph_no_img">
+            <p>
+                <b>Norsk Biokjemisk Selskap (Norwegian Biochemical Society)</b> is a society that aims to promote
+				biochemistry in Norway. The corporation represents Norwegian biochemistry and stays in contact
+				with international biochemistry organizations. We appreciate their funding to our iGEM team! 
+            </p>
+        </div>
+		
+		
+		<div class="break_1">
+            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
+        </div>
+
+        <div class="image" style="width: 50%;margin-top: 5em">
+            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
+            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
+            <img src="http://2017.igem.org/wiki/images/f/f3/T--NTNU_Trondheim--AquaGen-logo_White_version.png">
+        </div>
+		
+        <div class="paragraph_no_img">
+            <p>
+                <b>AquaGen</b> is a breeding company which develops, produces and delivers genetic material to 
+				the global sea-farming industry. Through a market-oriented research and development
+				AquaGen has achieved a leading position as a provider of fertilized eggs of Atlantic 
+				salmon and rainbow trout. We would like to thank AquaGen for their funding to our project!
+            </p>
+        </div>
+		
+		
+		<div class="break_1">
+            <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
+        </div>
+		
+        <div class="image" style="width: 60%;margin-top: 5em">
+            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
+            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
+            <img src="http://2017.igem.org/wiki/images/9/91/T--NTNU_Trondheim--IMR-logo_white_version.png">
+        </div>
+		
+        <div class="paragraph_no_img">
+            <p>
+                With a staff of almost 750, the <b>Institute of Marine Research (IMR)</b> is Norway's largest
+				centre of marine science. Their main task is to provide advice to Norwegian authorities 
+				on aquaculture and the ecosystems of the Barents Sea, the Norwegian Sea, the North Sea 
+				and the Norwegian coastal zone. For this reason, about fifty percent of their activities
+				are financed by the Ministry of Trade, Industry and Fisheries. We appreciate their funding
+				to our project!
+            </p>
+        </div>
+		
+
         <div class="footer">
             <img src="http://2017.igem.org/wiki/images/7/7c/T--NTNU_Trondheim--splitter_footer.svg">
             <div class="footer_content">
@@ -255,6 +311,9 @@
                     </a>
                     <a href="http://www.vectronbiosolutions.com/" target="_blank">
                         <img src="http://2017.igem.org/wiki/images/8/86/T--NTNU_Trondheim--Vectron_forslag1_transparent.png">
+                    </a>
+					<a href="http://www.imr.no/en" target="_blank">
+                        <img src="http://2017.igem.org/wiki/images/e/e4/T--NTNU_Trondheim--Havforskningsinstituttet_white.png">
                     </a>
                 </div>
                 <div class="sosial_media">
