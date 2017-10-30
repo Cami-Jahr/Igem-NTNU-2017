@@ -8,6 +8,13 @@
 -->
 <head>
     <meta charset="UTF-8">
+    <!-- Preloaded elements which is added dynamically to the page, and as such might be needed before normally loaded -->
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/3/3a/T--NTNU_Trondheim--arrow_down_black.png">
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/8/85/T--NTNU_Trondheim--arrow_up_black.png">
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/d/d2/T--NTNU_Trondheim--arrow_up_grey.png">
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/4/4c/T--NTNU_Trondheim--IMG_8959.jpg">
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/e/e2/T--NTNU_Trondheim--IMG_8974.jpg">
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/7/75/T--NTNU_Trondheim--IMG_9887.jpg">
     <!--stylesheets etc -->
     <link rel="stylesheet" type="text/css"
           href="http://2017.igem.org/Template:NTNU_Trondheim/CSS/global?action=raw&ctype=text/css" />
@@ -25,6 +32,8 @@
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
     <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/picture_field_resize?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/slideshow?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/show_more_text?action=raw&ctype=text/javascript"></script>
 </head>
 <body>
 <div id="page_content_container">
@@ -32,30 +41,12 @@
         <div id='cssmenu'>
             <!-- Is ordered left to right! -->
             <ul>
-                <li class='active'>
+                <li>
                     <a href='http://2017.igem.org/Team:NTNU_Trondheim'>
                         <div>
-			  <span>
-			     Home
-			   </span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href='http://2017.igem.org/Team:NTNU_Trondheim/Safety'>
-                        <div>
-			  <span>
-				Safety
-			   </span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href='http://2017.igem.org/Team:NTNU_Trondheim/Parts'>
-                        <div>
-			  <span>
-				Parts
-			   </span>
+							<span>
+								Home
+							</span>
                         </div>
                     </a>
                 </li>
@@ -73,38 +64,26 @@
                                 </span>
                             </a>
                         </li>
+                    </ul>
+                </li>
+                <li class='has-sub'>
+                    <div>
+                        <span>
+                            Wet lab
+                        </span>
+                    </div>
+                    <ul>
                         <li>
-                            <a href='http://2017.igem.org/Team:NTNU_Trondheim/Experiments'>
+                            <a href='#'>
+                                <span>
+                                    Lab journal
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#'>
                                 <span>
                                     Protocols
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='http://2017.igem.org/Team:NTNU_Trondheim/Notebook'>
-                                <span>
-                                    Lab Journal
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='http://2017.igem.org/Team:NTNU_Trondheim/Model'>
-                                <span>
-                                    Model
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='http://2017.igem.org/Team:NTNU_Trondheim/Results'>
-                                <span>
-                                    Results
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='http://2017.igem.org/Team:NTNU_Trondheim/Demonstrate'>
-                                <span>
-                                    Demonstrate
                                 </span>
                             </a>
                         </li>
@@ -118,14 +97,14 @@
                     </div>
                     <ul>
                         <li>
-                            <a href='http://2017.igem.org/Team:NTNU_Trondheim/HP/Silver'>
+                            <a href='#'>
                                 <span>
                                     Human practice
                                 </span>
                             </a>
                         </li>
                         <li>
-                            <a href='http://2017.igem.org/Team:NTNU_Trondheim/Engagement'>
+                            <a href='#'>
                                 <span>
                                     Public engagement
                                 </span>
@@ -133,24 +112,17 @@
                         </li>
                     </ul>
                 </li>
-                <li class='has-sub'>
+                <li class='has-sub active'>
                     <div>
                         <span>
                             People
                         </span>
                     </div>
-                    <ul>
+					<ul>
                         <li>
                             <a href='http://2017.igem.org/Team:NTNU_Trondheim/Team'>
                                 <span>
                                     Team
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='http://2017.igem.org/Team:NTNU_Trondheim/Collaborations'>
-                                <span>
-                                    Collaborations
                                 </span>
                             </a>
                         </li>
@@ -161,47 +133,10 @@
                                 </span>
                             </a>
                         </li>
-                        <li>
-                            <a href='http://2017.igem.org/Team:NTNU_Trondheim/Contribution'>
-                                <span>
-                                    Contribution
-                                </span>
-                            </a>
-                        </li>
-                        <li>
+						 <li>
                             <a href='http://2017.igem.org/Team:NTNU_Trondheim/People/Sponsors'>
                                 <span>
                                     Sponsors
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class='has-sub'>
-                    <div>
-                        <span>
-                            Awards
-                        </span>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href='http://2017.igem.org/Team:NTNU_Trondheim/Achievements'>
-                                <span>
-                                    Achievements
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='http://2017.igem.org/Team:NTNU_Trondheim/Applied_Design'>
-                                <span>
-                                    Applied Design
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='http://2017.igem.org/Team:NTNU_Trondheim/Hardware'>
-                                <span>
-                                    Hardware
                                 </span>
                             </a>
                         </li>
@@ -222,10 +157,20 @@
             <img src="http://2017.igem.org/wiki/images/7/74/T--NTNU_Trondheim--top_left_triangle.svg">
         </div>
         <div id="slideshow_container">
-            <!-- example of slideshow of 1, ie. only a picture. If you wish to make slideshow again, remember to comment
-            back the slideshow.js script in the head section-->
             <!-- dimensions 2:1 must be honored for ALL pictures added to slideshow -->
-            <img src="http://2017.igem.org/wiki/images/e/e2/T--NTNU_Trondheim--IMG_8974.jpg">
+            <!-- One span must be added, with increased changeToDiv parameter if additional images are added -->
+            <img class="slideshow_picture" src="http://2017.igem.org/wiki/images/2/28/T--NTNU_Trondheim--boat2.png">
+            <img class="slideshow_picture" src="http://2017.igem.org/wiki/images/4/4c/T--NTNU_Trondheim--IMG_8959.jpg">
+            <img class="slideshow_picture" src="http://2017.igem.org/wiki/images/e/e2/T--NTNU_Trondheim--IMG_8974.jpg">
+            <img class="slideshow_picture" src="http://2017.igem.org/wiki/images/7/75/T--NTNU_Trondheim--IMG_9887.jpg">
+            <div class="slider_select" style="width:100%">
+                <div class="arrow-left" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="arrow-right" onclick="plusDivs(1)">&#10095;</div>
+                <span class="dot current_dot" onclick="changeToDiv(1)"></span>
+                <span class="dot" onclick="changeToDiv(2)"></span>
+                <span class="dot" onclick="changeToDiv(3)"></span>
+                <span class="dot" onclick="changeToDiv(4)"></span>
+            </div>
         </div>
     </div>
 
@@ -234,72 +179,81 @@
             <img src="http://2017.igem.org/wiki/images/4/49/T--NTNU_Trondheim--splitter_header.svg">
         </div>
 
-        <div class="paragraph_img_right">
-            <h1>Why phages?</h1>
-            <div>
-                <img src="http://2017.igem.org/wiki/images/5/5c/T--NTNU_Trondheim--fag.png">
-            </div>
-            <p>
-               Antibiotic resistance is poised to become one of the greatest dangers of our time. 
-			   Ever since the discovery of penicillin in 1928, antibiotics have been our first line 
-			   of defense against bacterial infections. However, widespread overuse of antibiotics, 
-			   coupled with minimal investment in new treatments have allowed pathogenic bacteria to 
-			   develop resistances to many antibiotics. Fortunately, there is more than one way to 
-			   kill bacteria. Bacteriophages (phages for short) are bacteria-specific viruses capable 
-			   of killing select bacteria while leaving animal cells unharmed. For this reason, phages 
-			   could potentially synergize with, or even replace antibiotics. This type of treatment is 
-			   called phage therapy.
-            </p>
+        <div class="paragraph_no_img">
+            <h1>Attributions</h1>
+                 <p>
+                <b>Throughout the iGEM competition 2017 </b>our team has been advised and guided by a number of people and sponsors, which has helped us to complete the project.
+                
+                <br><br></p>
         </div>
-		
+
 
         <div class="break_2">
             <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
         </div>
+            <div class="paragraph_no_img">
+                <h1>Thanks to</h1><br>
+                <p>Professor and supervisor <b>Eivind Almaas</b> for setting up the team, for giving us exceptional guidance during the competition, and for mentoring both our team and team UiOslo during the preparations for the Giant Jamboree presentations.<br><br>
 
-        <div class="paragraph_img_left">
-            <h1>Why not yet?</h1>	<!-- Don't work properly -->
-            <div class="image" style="width: 30%;margin-top: -3em">
-                <img src="http://2017.igem.org/wiki/images/b/bc/T--NTNU_Trondheim--phage_specifficity.png">
-            </div>
-            <p>
-                Phage therapy does however have several issues to be ironed out before becoming a 
-				mainstream medical treatment. One major stumbling block for phage therapy is the high 
-				host specificity of phages. Many phages can only infect certain strains of a bacterial 
-				species. This creates the need for either large libraries of potential phages, or a 
-				quick method of developing a phage capable of fighting a given bacterial infection. 
-				In order to solve this problem, our project attempts the latter method.
+				PhD Candidate <b>Che Fai Alex Wong</b> for giving us tips and advice on phage culturing and isolation, finding papers related to our project, and for being very kind to us on the lab every day.<br><br>
 
+				<b>Joachim Jahr</b> for helping us design our iGEM webpage.<br><br>
+
+				PhD Candidate <b>Eivind Bøe Drejer</b> for giving us advice on central molecular biology laboratory tecniques.<br><br>
+				Associate Professor <b>Ingrid Bakke </b>for giving us advice and borrowing us lab equipment.<br><br>
+				Associate Professor <b>Martin F. Hohmann-Marriott </b>for helping us with spectrophotometry and 3D printing.<br><br>
+				PhD Candidate <b>Joachim Sebastian Kjesbu</b> for giving us advise on chemostats.  <br><br>
+				Staff Engineer <b>Hanne Jørgensen</b> for giving us lab safety training and general advice in the lab.<br><br>
+				Staff Engineer <b>Merethe Vadseth</b> for helping us order equipment and reagents.<br><br>
+				Professor <b>Jan Egil Afset</b> for letting us collect samples from the water treatment plant.<br><br>
+				Bacteriologist <b>Hans Petter Kleppen</b> for giving us advice on where to find samples containing 
+				bacteriophages.<br><br>
+				Our sponsors: Skretting, AquaGen AS, Institute of Marine Research, Vectron Biosolutions AS, 
+				Department of Biotechnology and Food Science at NTNU, Faculty of Natural Sciences at NTNU, 
+				Norsk Biokjemisk Selskap, The Centre for Digital Life Norway. 
+				See <a href="http://2017.igem.org/Team:NTNU_Trondheim/People/Sponsors">sponsors</a> for more 
+				information.<br><br>
+
+				<b>Team UiOslo</b> for visiting us in Trondheim, characterizing our plasmid and inviting us 
+				to the Cutting Edge festival in Oslo. Check out their project <a href="http://2017.igem.org/Team:UiOslo_Norway">here</a>.<br><br>
             </p>
         </div>
+
+
 
 
         <div class="break_1">
             <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
         </div>
 
-        <div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/3/36/T--NTNU_Trondheim--phage_evolution.png">
-        </div>
+ 
 
         <div class="paragraph_no_img">
-            <h1>Our project</h1>
-            <p>
-                For our project, we aim to develop a method of evolving phages capable of infecting 
-				a target bacteria strain. We plan to first harvest a catalogue of phages and identify 
-				their host bacteria. Phages are plentiful in nature, and by taking different water and 
-				soil samples, we will collect a variety of phages capable of infecting different 
-				bacteria.  By genetically modifying host bacteria, we will accelerate the natural 
-				mutation rate of our respective phages. We plan to set up a controlled environment that 
-				favorizes phages capable of also infecting the target bacteria. We believe this method will 
-				be capable of quickly producing tailored phages, keeping us one step ahead of the resistant 
-				bacteria. 
+            <h1>Team members’ contributions</h1>
+       <div class="image" style="width: 70%;margin-top: 5em">
+            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
+            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
+            <img src="http://2017.igem.org/wiki/images/3/35/T--NTNU_Trondheim--Team_on_lab.jpeg">
+			<p>From left to right: Dr. Eivind Almaas, Peter H, Jenny, Sheida, Marianna, Nikolay, Martha, Aslak, Peter D.</p>
+        </div>
+              <p><br><br><br> During the competition, all team members <br><br><br> 
+                  &bull; Modelling the project - Peter D, Nikolay, Marta  <br><br>
+                  &bull; Systems regulation - Nikolay, Peter D<br><br>
+                  &bull; Designing parts for the chemostat - Peter H, Aslak <br><br>
+                  &bull; Designing plasmids - Nikolay, Marta <br><br>
+                  &bull; Designing the wepage - Peter H<br><br>
+                  &bull; Writing content of the webpage - all team members  <br><br>
+                  &bull; Human Practices - Marianna, Marta, Sheida, Jenny<br><br>
+                  &bull; Sponsor contacts - all team members <br><br>
+                  &bull; Working in the wet lab - all team members <br><br>
+                  &bull; Safety - all team members <br><br>
+                  &bull; Photography - Aslak, Peter H. <br><br>
+                  &bull; Social media - Marianna, Jenny </p>
 
-            </p>
+
         </div>
 
+		
         <div class="footer">
             <img src="http://2017.igem.org/wiki/images/7/7c/T--NTNU_Trondheim--splitter_footer.svg">
             <div class="footer_content">
