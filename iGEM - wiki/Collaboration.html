@@ -7,7 +7,11 @@
         grey: #808080
 -->
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <!-- Preloaded elements which is added dynamically to the page, and as such might be needed before normally loaded -->
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/3/3a/T--NTNU_Trondheim--arrow_down_black.png">
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/8/85/T--NTNU_Trondheim--arrow_up_black.png">
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/d/d2/T--NTNU_Trondheim--arrow_up_grey.png">
     <!--stylesheets etc -->
     <link rel="stylesheet" type="text/css"
           href="http://2017.igem.org/Template:NTNU_Trondheim/CSS/global?action=raw&ctype=text/css" />
@@ -25,6 +29,8 @@
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
     <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/picture_field_resize?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/slideshow?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/show_more_text?action=raw&ctype=text/javascript"></script>
 </head>
 <body>
 <div id="page_content_container">
@@ -218,7 +224,7 @@
         </div>
     </div>
 
-     <div id="picture_field">
+    <div id="picture_field">
         <div id="triangle_topright">
             <img src="http://2017.igem.org/wiki/images/e/e6/T--NTNU_Trondheim--top_right_triangle.svg">
         </div>
@@ -232,7 +238,7 @@
             <!-- example of slideshow of 1, ie. only a picture. If you wish to make slideshow again, remember to comment
             back the slideshow.js script in the head section-->
             <!-- dimensions 2:1 must be honored for ALL pictures added to slideshow -->
-            <img src="http://2017.igem.org/wiki/images/8/85/T--NTNU_Trondheim--Sponsors.jpg">
+            <img src="http://2017.igem.org/wiki/images/a/af/T--NTNU_Trondheim--Collaboration.jpg">
         </div>
     </div>
 
@@ -242,196 +248,105 @@
         </div>
 
         <div class="paragraph_no_img">
-            <h1>Sponsors</h1>
+            <h1>Collaboration</h1>
             <p>
-                Our sincerest thanks to everyone who helped to fund our project. Without their support, 
-				none of what we have achieved would have been possible.
+                We had a meet-up in Trondheim with the iGEM team from the University of Oslo (UiOslo). During the
+                meet-up we had a "Mini Jamboree" and held presentations for each other. Professor and previous iGEM
+                judge Eivind Almaas was present to give feedback, and the teams gave feedback and comments to the
+                presentation and project for each other. After the Mini Jamboree we had a lovely lunch together
+                (see pictures) and sightseeing in our laboratory, at the university campus, and in Trondheim city.
             </p>
-        </div>
-
-
-        <div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
-        </div>
-
-		<div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/a/ae/T--NTNU_Trondheim--Faculty_logo_white.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>The Faculty of Natural Sciences</b> at our university (NTNU) performs research that addresses 
-				global challenges in energy, climate, environment, food, water, health and welfare. Their 
-				activities range from basic research within biology, physics and chemistry, to enabling 
-				technologies such as biotechnology, materials technology and nanotechnology. They have 
-				provided our project with funding, which we highly appreciate.
-                <br><br>
-                Read more about the faculty <a href="https://www.ntnu.edu/nv">here</a>.
-            </p>
-        </div>
-
-
-        <div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
-        </div>
-
-		<div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/8/8a/T--NTNU_Trondheim--IBT-logo_light_version.jpg">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>The Department for Biotechnology and Food Science</b> is one of the eight departments at 
-				the Faculty of Natural Sciences at our university (NTNU), and they have provided our
-				iGEM team with funding and laboratory space during the project. We would also like to 
-				thank the members of the department that contributed with their knowledge, 
-				encouragement and support!
-                <br><br>
-                Read more about the department <a href="http://www.ntnu.edu/ibt">here</a>.
-            </p>
-        </div>
-
-
-        <div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
         </div>
 
         <div class="image" style="width: 50%;margin-top: 5em">
             <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
             <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/0/04/T--NTNU_Trondheim--DLN_white_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>The Centre for Digital Life Norway (DLN)</b> is a national centre for biotechnology education, 
-				research, and innovation. It is run as a collaborative project by the University of Oslo, 
-				the University of Bergen and NTNU, supported by the Norwegian Research Council. DLN is a 
-				virtual centre, currently involving twelve major research projects, with a constantly 
-				increasing portfolio as projects are welcome to join the centre. Thanks to DLN for their 
-				funding to our project!
-                <br><br>
-                Visit their <a href="https://digitallifenorway.org/gb/">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
+            <img src="http://2017.igem.org/wiki/images/a/a5/T--NTNU_Trondheim--Mini_jamboree_with_UiO.jpg">
+            <p>Presentation rehearsal at "mini-jamboree" with the UiOslo iGEM team.</p>
         </div>
 
         <div class="image" style="width: 50%;margin-top: 5em">
             <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
             <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/f/ff/T--NTNU_Trondheim--Vectron-logo_White_version.png">
+            <img src="http://2017.igem.org/wiki/images/6/6b/T--NTNU_Trondheim--Collaboration_lunch.jpg">
+            <p>Lunch with the UiOslo iGEM team.<br><br><br><br></p>
         </div>
-		
+
+
+        <div class="break_2">
+            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
+        </div>
+
         <div class="paragraph_no_img">
+            <h1>Improved characterization</h1>
             <p>
-                <b>Vectron Biosolutions</b> was founded in 2008 as a result of more than 15 years of research in
-				Prof. Svein Valla's research group at Department of Biotechnology at NTNU. The research lead 
-				to an innovative technology for production of recombinant proteins that can be used for higher 
-				protein production levels at lower costs, and is Vectron’s core technology today. Thanks to 
-				Vectron Biosolutions for their funding to our project!
+                Afterwards, we decided together that the UiOslo team could help our team by improving the
+                characterization of our biobrick MP6 mutator. They used <i>Escherichia coli</i> TOP10, which is a different
+                strain from the <i>E. coli</i> DH5α that we have been using. By using a different strain, we were able to obtain
+                more data on the mutagenesis activity of the plasmid and check if the plasmid worked in another strain.
                 <br><br>
-                Visit their <a href="http://www.vectronbiosolutions.com/">webpage</a> for more information.
+                We sent our biobrick to Oslo, together with the guidelines on how to perform the experiment. First,
+                the MP6 mutator plasmid was transformed into <i>E. coli</i> TOP10 together with the pLA230 control plasmid.
+                After 16 hours incubation at 37 C, the transformed bacteria culture was split into two, and glucose
+                (20 mM) was added in one culture flask while arabinose (20 mM) was added in the other one. The cultures
+                were incubated at 37 C for 24 hours. The next day, 100 μL of the different cultures were plated on plates
+                with LA, glucose and ampicillin (culture dilutions 10-0-10-3) and plates with only LA and glucose
+                (culture concentrations 10-5-10-8). The plates were grown overnight. The resulting plates are shown
+                in the picture below, and all results are also shown at Team UiOslo Norway's wiki at the
+                <a href="http://2017.igem.org/Team:UiOslo_Norway/Results">results page</a>.
             </p>
         </div>
-		
-		
+
+        <div class="image" style="width: 50%;margin-top: 5em">
+            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
+            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
+            <img src="http://2017.igem.org/wiki/images/b/b4/T--NTNU_Trondheim--Collaboration_plates.jpg">
+            <p>Plates from the UiOslo iGEM teams characterization of our biobrick.</p>
+        </div>
+
+        <div class="paragraph_no_img">
+            <p>
+                There were significant differences between the number of colonies formed in plates with cells and medium
+                that were preincubated with 20 mM arabinose and plates with cells and medium that were preincubated with
+                20 mM glucose.
+                All plates containing Arabinose (MP6 inducer) had a higher number of colonies than the plates containing
+                Glucose (MP6 repressor).
+                <br><br>
+                MP6 induces mutations in the control plasmid pLA230, which originally contains a non-functional
+                Ampicillin resistance gene due to one point mutation. If the point mutation is reversed, this leads
+                to the cells gaining Ampicillin resistance. When grown on agra plates with Ampicillin, only cells that
+                got this point mutation reversed will be able to grow. The number of colonies on the plates, is therefore
+                an indirect measure of the mutation activity of MP6.
+                <br><br>
+                The results from the UiOslo iGEM team therefore confirmed that the biobrick works as expectated:
+                it has a high mutational activity if induced by arabinose, and a lower mutatinal activity if repressed
+                by glucose. Their results also confirmed that our biobrick can be used in E. coli Top10, which is a
+                different strain than we used. The numbers of colonies in the UiOslo teams experiments were of a higher
+                range than in our experiment, making it more difficult to count. This might be due to small procedural
+                differences, or it may indicate that the protocol for the test needs to be adjusted when using a different
+                strain than E. coli DH5α.
+            </p>
+        </div>
+
+
         <div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
-        </div>
-		
-        <div class="image" style="width: 40%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/e/e8/T--NTNU_Trondheim--NBS-logo_white_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>Norsk Biokjemisk Selskap (Norwegian Biochemical Society)</b> is a society that aims to promote
-				biochemistry in Norway. The corporation represents Norwegian biochemistry and stays in contact
-				with international biochemistry organizations. We appreciate their funding to our iGEM team!
-                <br><br>
-                Check out their <a href="http://www.biokjemisk.no/">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-		<div class="break_1">
             <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
+        </div>
+
+        <div class="paragraph_no_img">
+            <h1>Thank you!</h1>
+            <p>
+                We want to thank team UiOslo for the collaboration and a wonderful time at the "Mini Jamboree".
+                We are looking forward to meet again at the Giant Jamboree in Boston!
+            </p>
         </div>
 
         <div class="image" style="width: 50%;margin-top: 5em">
             <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
             <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/f/f3/T--NTNU_Trondheim--AquaGen-logo_White_version.png">
+            <img src="http://2017.igem.org/wiki/images/a/a3/T--NTNU_Trondheim--Collaboration_office.jpg">
+            <p>Team NTNU and team UiOslo at "mini-jamboree".<br><br><br><br></p>
         </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>AquaGen</b> is a breeding company which develops, produces and delivers genetic material to 
-				the global sea-farming industry. Through a market-oriented research and development
-				AquaGen has achieved a leading position as a provider of fertilized eggs of Atlantic 
-				salmon and rainbow trout. We would like to thank AquaGen for their funding to our project!
-                <br><br>
-                Check out their <a href="http://aquagen.no/en/">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
-        </div>
-		
-        <div class="image" style="width: 60%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/9/91/T--NTNU_Trondheim--IMR-logo_white_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                With a staff of almost 750, the <b>Institute of Marine Research (IMR)</b> is Norway's largest
-				centre of marine science. Their main task is to provide advice to Norwegian authorities 
-				on aquaculture and the ecosystems of the Barents Sea, the Norwegian Sea, the North Sea 
-				and the Norwegian coastal zone. For this reason, about fifty percent of their activities
-				are financed by the Ministry of Trade, Industry and Fisheries. We appreciate their funding
-				to our project!
-                <br><br>
-                Visit their <a href="http://www.imr.no/en">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
-        </div>
-
-        <div class="image" style="width: 40%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/9/96/T--NTNU_Trondheim--Skretting_logo_White.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-               <b> Skretting </b> is the world leader in the manufacture and supply of aquaculture feeds, making us an essential
-			   link in the feed-to-food chain. They apply their knowledge of ingredients and the nutritional needs of
-			   fish and shrimp to develop  innovations that achieve optimum nutritional value, sustainable production 
-			   and economic performance as they seek to fulfil their company-wide mission of ‘Feeding the Future’. 
-			   We appreciate their funding to our project!
-                <br><br>
-                Visit their <a href="http://www.skretting.com/en">webpage</a> for more information.
-            </p>
-        </div>
-		
 
         <div class="footer">
             <img src="http://2017.igem.org/wiki/images/7/7c/T--NTNU_Trondheim--splitter_footer.svg">

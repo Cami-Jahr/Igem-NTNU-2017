@@ -7,7 +7,11 @@
         grey: #808080
 -->
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <!-- Preloaded elements which is added dynamically to the page, and as such might be needed before normally loaded -->
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/3/3a/T--NTNU_Trondheim--arrow_down_black.png">
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/8/85/T--NTNU_Trondheim--arrow_up_black.png">
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/d/d2/T--NTNU_Trondheim--arrow_up_grey.png">
     <!--stylesheets etc -->
     <link rel="stylesheet" type="text/css"
           href="http://2017.igem.org/Template:NTNU_Trondheim/CSS/global?action=raw&ctype=text/css" />
@@ -25,6 +29,8 @@
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
     <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/picture_field_resize?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/slideshow?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/show_more_text?action=raw&ctype=text/javascript"></script>
 </head>
 <body>
 <div id="page_content_container">
@@ -59,7 +65,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="has-sub">
+                <li class="has-sub active">
                     <div>
                         <span>
                             Project
@@ -147,7 +153,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class='has-sub active'>
+                <li class='has-sub'>
                     <div>
                         <span>
                             People
@@ -218,7 +224,7 @@
         </div>
     </div>
 
-     <div id="picture_field">
+    <div id="picture_field">
         <div id="triangle_topright">
             <img src="http://2017.igem.org/wiki/images/e/e6/T--NTNU_Trondheim--top_right_triangle.svg">
         </div>
@@ -232,7 +238,7 @@
             <!-- example of slideshow of 1, ie. only a picture. If you wish to make slideshow again, remember to comment
             back the slideshow.js script in the head section-->
             <!-- dimensions 2:1 must be honored for ALL pictures added to slideshow -->
-            <img src="http://2017.igem.org/wiki/images/8/85/T--NTNU_Trondheim--Sponsors.jpg">
+            <img src="http://2017.igem.org/wiki/images/9/93/T--NTNU_Trondheim--Description.jpg">
         </div>
     </div>
 
@@ -242,33 +248,51 @@
         </div>
 
         <div class="paragraph_no_img">
-            <h1>Sponsors</h1>
+            <h1>Our project</h1>
             <p>
-                Our sincerest thanks to everyone who helped to fund our project. Without their support, 
-				none of what we have achieved would have been possible.
+                A major challenge for phage therapy is the <i>high host specificity of phages</i>. A phage that is capable of
+                killing one bacterial infection will not automatically be capable of killing another similar bacterial
+                infection. In terms of safety and side effects, this is a good thing, as bacteriophages targeted towards
+                harmful bacteria would not be capable of harming the cells or beneficial bacterial flora of the patient.
+                However, in the case of a serious bacterial infection, it is obviously crucial for the patient to get the
+                medicine in time to recover safely and well.
+                <br><br>
+                We were eager to try to counter this challenge. <i>For our project, we therefore aimed to develop a method
+                of evolving phages capable of infecting a targeted bacterial strain that they were previously not able
+                to infect.</i> This method needed to be able to quickly producing tailored phages, keeping us one step
+                ahead of the resistant bacteria. Our project can be divided into 4 parts.
             </p>
         </div>
 
 
-        <div class="break_1">
+        <div class="break_2">
             <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
         </div>
 
-		<div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/a/ae/T--NTNU_Trondheim--Faculty_logo_white.png">
-        </div>
-		
         <div class="paragraph_no_img">
+            <h1>1) Collecting, isolating and purifying bacteriophages</h1>
             <p>
-                <b>The Faculty of Natural Sciences</b> at our university (NTNU) performs research that addresses 
-				global challenges in energy, climate, environment, food, water, health and welfare. Their 
-				activities range from basic research within biology, physics and chemistry, to enabling 
-				technologies such as biotechnology, materials technology and nanotechnology. They have 
-				provided our project with funding, which we highly appreciate.
+                Phages are plentiful in nature and exists wherever bacteria are found. By taking environmental samples
+                from a wastewater treatment plant, we collected a broad range of bacteriophages. Bacteriophages capable
+                of infecting and killing <i>Escherichia coli</i> DH5α were amplified by mixing the environmental water
+                samples with growth medium and inocculating the mixture with <i>E. coli</i> DH5α.
+            </p>
+        </div>
+
+        <div class="paragraph_img_left">
+            <div class="image" style="width: 30%;margin-top: 0em">
+                <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
+                <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
+                <img src="http://2017.igem.org/wiki/images/e/e1/T--NTNU_Trondheim--Plaques.jpg">
+                <p>Plaques of phages grown on <i>Escherichia coli</i> DH5α. First run.</p>
+            </div>
+            <p style="width: 65% !important; margin: auto 15% auto auto !important;">
+                The bacteriophages were purified by sentrifugation and filtering, and isolated by adding purified phage
+                mix to growing <i>E. coli</i> DH5α and plating them on agar plates. The bacteriophages could be seen as plaques
+                (empty spots with no bacterial growth) that was cut out of the agar and stored. In this way we got
+                bacteriophages capable of infecting a given bacterial strain, <i>E. coli</i> DH5α.
                 <br><br>
-                Read more about the faculty <a href="https://www.ntnu.edu/nv">here</a>.
+                See <a href="http://2017.igem.org/Team:NTNU_Trondheim/Experiments">protocols</a> for a detailed description of the isolation and purification process.
             </p>
         </div>
 
@@ -277,161 +301,89 @@
             <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
         </div>
 
-		<div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/8/8a/T--NTNU_Trondheim--IBT-logo_light_version.jpg">
-        </div>
-		
         <div class="paragraph_no_img">
+            <h1>2) Evolving a bacteriophage capable of infecting target bacteria</h1>
             <p>
-                <b>The Department for Biotechnology and Food Science</b> is one of the eight departments at 
-				the Faculty of Natural Sciences at our university (NTNU), and they have provided our
-				iGEM team with funding and laboratory space during the project. We would also like to 
-				thank the members of the department that contributed with their knowledge, 
-				encouragement and support!
-                <br><br>
-                Read more about the department <a href="http://www.ntnu.edu/ibt">here</a>.
+                In order to evolve bacteriophages capable of infecting target bacteria, we needed a controlled environment
+                that favoured phages capable of infecting target bacteria. We built a bacterium/bacteriophage control
+                system consisting of 3 coupled chemostats and two connected containers for medium (see figure).
+                Photosensors capable of measuring real-time concentration of bacteria and phages in the out-flow were
+                constructed. For a description of the hardware we built from scratch, see <a href="http://2017.igem.org/Team:NTNU_Trondheim/Hardware">hardware</a>.
             </p>
         </div>
 
+        <div class="dropdown_paragraph">
+            <div class="slidedown_button">
+                <p class="show_more">Show more</p>
+                <img src="http://2017.igem.org/wiki/images/7/72/T--NTNU_Trondheim--arrow_down_grey.png">
+                <p class="show_less">Show less</p>
+            </div>
+            <div class="dropdown_text">
 
-        <div class="break_1">
+                <div class="paragraph_no_img">
+                    <p>
+                        We had to set up a controlled environment that favoured phages capable of infecting some chosen
+                        target bacteria. In order to do this we first had to evolve phage host bacteria so that they could
+                        become resistant towards the phages. These were used as the target bacteria. The process was done
+                        in a single chemostat: When phages and bacteria are mixed, this creates an evolutionary pressure
+                        for the bacteria to develop resistance towards the phage, and those capable of developing this
+                        resistance will survive in the chemostat.
+                        <br><br>
+                        Once having one bacterial strain resistant towards the phage (target bacteria), and one bacterial
+                        strain non-resistant towards the phage (acting as phage hosts), we could proceed in the triple
+                        chemostat system (see figure):
+                    </p>
+                </div>
+
+                <div class="image" style="width: 50%;margin-top: 5em">
+                    <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
+                    <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
+                    <img src="http://2017.igem.org/wiki/images/6/6e/T--NTNU_Trondheim--Chemostat_illustration.png">
+                    <p>Illustration of chemostat setup.</p>
+                </div>
+
+                <div class="paragraph_no_img">
+                    <p>
+                        Medium from two separate containers was pumped into two separate chemostats, chemostat 1 and 2.
+                        Chemostat 1 contained the host bacteria (not phage resistant) and chemostat 2 contained the
+                        target bacteria (phage resistant). The contents of chemostats 1 and 2 were further pumped into
+                        chemostat 3 and mixed there. The bacteriophages were also pumped into chemostat 3. Phages,
+                        bacteria and medium was continously pumped out of chemostat 3 and measured to control the
+                        bacterial concentration.
+                        <br><br>
+                        The reason for this set-up was to be able to continously provide the bacteriophages
+                        with new hosts from chemostat 1, giving them a chance to evolve and overcome the resistance
+                        of the target bacteria pumped from chemostat 2. If not provided with available hosts, there
+                        was a risk that the bacteriophages would get flushed out of the chemostat because they didn’t
+                        evolve fast enough to be able to infect the target bacteria. With our set-up, this problem was
+                        avoided, so that the phages could continue infecting and replicating within the host bacteria and
+                        simultaneously evolving until they were also capable of infecting the resistant bacteria.
+                    </p>
+                </div>
+
+                <div class="dropdown_collapse">
+                    Hide
+                </div>
+            </div>
+        </div>
+
+
+        <div class="break_2">
             <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
         </div>
 
-        <div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/0/04/T--NTNU_Trondheim--DLN_white_version.png">
-        </div>
-		
         <div class="paragraph_no_img">
+            <h1>3) Increase the mutation rate of bacteria</h1>
             <p>
-                <b>The Centre for Digital Life Norway (DLN)</b> is a national centre for biotechnology education, 
-				research, and innovation. It is run as a collaborative project by the University of Oslo, 
-				the University of Bergen and NTNU, supported by the Norwegian Research Council. DLN is a 
-				virtual centre, currently involving twelve major research projects, with a constantly 
-				increasing portfolio as projects are welcome to join the centre. Thanks to DLN for their 
-				funding to our project!
-                <br><br>
-                Visit their <a href="https://digitallifenorway.org/gb/">webpage</a> for more information.
+                Since our platform relies on mutation/evolution of bacteria, it is useful to accelerate the natural
+                mutation rate of the bacteria. We therefore contributed with a new biobrick, MP6, which is an inducible
+                plasmid that can be transformed into <i>E. coli</i> and increase the mutation rate of the bacteria. The mutational
+                activity is induced in the presence of Arabinose, and repressed in the presence of Glucose, making it
+                possible to turn the transcription of the mutagenesis inducing proteins on and off.
+                See <a href="http://2017.igem.org/Team:NTNU_Trondheim/Parts">parts</a> and <a href="http://2017.igem.org/Team:NTNU_Trondheim/Results">results</a> for more details.
             </p>
-        </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
         </div>
 
-        <div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/f/ff/T--NTNU_Trondheim--Vectron-logo_White_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>Vectron Biosolutions</b> was founded in 2008 as a result of more than 15 years of research in
-				Prof. Svein Valla's research group at Department of Biotechnology at NTNU. The research lead 
-				to an innovative technology for production of recombinant proteins that can be used for higher 
-				protein production levels at lower costs, and is Vectron’s core technology today. Thanks to 
-				Vectron Biosolutions for their funding to our project!
-                <br><br>
-                Visit their <a href="http://www.vectronbiosolutions.com/">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-        <div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
-        </div>
-		
-        <div class="image" style="width: 40%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/e/e8/T--NTNU_Trondheim--NBS-logo_white_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>Norsk Biokjemisk Selskap (Norwegian Biochemical Society)</b> is a society that aims to promote
-				biochemistry in Norway. The corporation represents Norwegian biochemistry and stays in contact
-				with international biochemistry organizations. We appreciate their funding to our iGEM team!
-                <br><br>
-                Check out their <a href="http://www.biokjemisk.no/">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
-        </div>
-
-        <div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/f/f3/T--NTNU_Trondheim--AquaGen-logo_White_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>AquaGen</b> is a breeding company which develops, produces and delivers genetic material to 
-				the global sea-farming industry. Through a market-oriented research and development
-				AquaGen has achieved a leading position as a provider of fertilized eggs of Atlantic 
-				salmon and rainbow trout. We would like to thank AquaGen for their funding to our project!
-                <br><br>
-                Check out their <a href="http://aquagen.no/en/">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
-        </div>
-		
-        <div class="image" style="width: 60%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/9/91/T--NTNU_Trondheim--IMR-logo_white_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                With a staff of almost 750, the <b>Institute of Marine Research (IMR)</b> is Norway's largest
-				centre of marine science. Their main task is to provide advice to Norwegian authorities 
-				on aquaculture and the ecosystems of the Barents Sea, the Norwegian Sea, the North Sea 
-				and the Norwegian coastal zone. For this reason, about fifty percent of their activities
-				are financed by the Ministry of Trade, Industry and Fisheries. We appreciate their funding
-				to our project!
-                <br><br>
-                Visit their <a href="http://www.imr.no/en">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
-        </div>
-
-        <div class="image" style="width: 40%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/9/96/T--NTNU_Trondheim--Skretting_logo_White.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-               <b> Skretting </b> is the world leader in the manufacture and supply of aquaculture feeds, making us an essential
-			   link in the feed-to-food chain. They apply their knowledge of ingredients and the nutritional needs of
-			   fish and shrimp to develop  innovations that achieve optimum nutritional value, sustainable production 
-			   and economic performance as they seek to fulfil their company-wide mission of ‘Feeding the Future’. 
-			   We appreciate their funding to our project!
-                <br><br>
-                Visit their <a href="http://www.skretting.com/en">webpage</a> for more information.
-            </p>
-        </div>
-		
 
         <div class="footer">
             <img src="http://2017.igem.org/wiki/images/7/7c/T--NTNU_Trondheim--splitter_footer.svg">
