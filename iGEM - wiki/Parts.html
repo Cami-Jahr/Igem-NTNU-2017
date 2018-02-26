@@ -7,7 +7,11 @@
         grey: #808080
 -->
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <!-- Preloaded elements which is added dynamically to the page, and as such might be needed before normally loaded -->
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/3/3a/T--NTNU_Trondheim--arrow_down_black.png">
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/8/85/T--NTNU_Trondheim--arrow_up_black.png">
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/d/d2/T--NTNU_Trondheim--arrow_up_grey.png">
     <!--stylesheets etc -->
     <link rel="stylesheet" type="text/css"
           href="http://2017.igem.org/Template:NTNU_Trondheim/CSS/global?action=raw&ctype=text/css" />
@@ -25,6 +29,8 @@
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
     <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/picture_field_resize?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/slideshow?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/show_more_text?action=raw&ctype=text/javascript"></script>
 </head>
 <body>
 <div id="page_content_container">
@@ -50,7 +56,7 @@
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href='http://2017.igem.org/Team:NTNU_Trondheim/Parts'>
                         <div>
 			  <span>
@@ -147,7 +153,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class='has-sub active'>
+                <li class='has-sub'>
                     <div>
                         <span>
                             People
@@ -218,7 +224,7 @@
         </div>
     </div>
 
-     <div id="picture_field">
+    <div id="picture_field">
         <div id="triangle_topright">
             <img src="http://2017.igem.org/wiki/images/e/e6/T--NTNU_Trondheim--top_right_triangle.svg">
         </div>
@@ -232,9 +238,10 @@
             <!-- example of slideshow of 1, ie. only a picture. If you wish to make slideshow again, remember to comment
             back the slideshow.js script in the head section-->
             <!-- dimensions 2:1 must be honored for ALL pictures added to slideshow -->
-            <img src="http://2017.igem.org/wiki/images/8/85/T--NTNU_Trondheim--Sponsors.jpg">
+            <img src="http://2017.igem.org/wiki/images/5/5a/T--NTNU_Trondheim--Parts.jpg">
         </div>
     </div>
+
 
     <div class="content">
         <div class="break_header">
@@ -242,33 +249,69 @@
         </div>
 
         <div class="paragraph_no_img">
-            <h1>Sponsors</h1>
+            <h1>Parts</h1>
             <p>
-                Our sincerest thanks to everyone who helped to fund our project. Without their support, 
-				none of what we have achieved would have been possible.
+                Overview of parts in this project:
+            </p>
+            <table border="1">
+                <tr>
+                    <td><b>Medal</b></td>
+                    <td><b>Part name</b></td>
+                    <td><b>Type</b></td>
+                    <td><b>Description</b></td>
+                    <td><b>Length (bp)</b></td>
+                </tr>
+                <tr>
+                    <td>Bronze</td>
+                    <td>BBa_K325909</td>
+                    <td>Generator</td>
+                    <td>Lux Operon (under pBAD)</td>
+                    <td>7637</td>
+                </tr>
+                <tr>
+                    <td>Silver</td>
+                    <td>BBa_K2265000</td>
+                    <td>Device</td>
+                    <td>MP6 mutator (original)</td>
+                    <td>4908</td>
+                </tr>
+            </table>
+            <p><br><br>
+                Our team improved the characterization of the BioBrick <a href="http://parts.igem.org/Part:BBa_K325909">BBa_K325909</a>
+                and designed and characterized the BioBrick <a href="http://parts.igem.org/Part:BBa_K2265000">BBa_K2265000</a>.
+                Both are documented in the iGEM Registry.
             </p>
         </div>
 
 
-        <div class="break_1">
+        <div class="break_2">
             <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
         </div>
 
-		<div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/a/ae/T--NTNU_Trondheim--Faculty_logo_white.png">
-        </div>
-		
         <div class="paragraph_no_img">
+            <h1>Biobrick contribution: The MP6 mutator (original)</h1>
             <p>
-                <b>The Faculty of Natural Sciences</b> at our university (NTNU) performs research that addresses 
-				global challenges in energy, climate, environment, food, water, health and welfare. Their 
-				activities range from basic research within biology, physics and chemistry, to enabling 
-				technologies such as biotechnology, materials technology and nanotechnology. They have 
-				provided our project with funding, which we highly appreciate.
+                The MP6 mutator (original) biobrick is a plasmid with an operon under control of the promoter pBAD
+                together with the transcription factor gene AraC, and six other genes that disrupt DNA replication:
+                DnaQ926, Dam, SeqA, EmrR, Ugi and Cda1. We designed this biobrick to accelerate bacterial mutation rate,
+                which could be useful for our evolution experiments.
                 <br><br>
-                Read more about the faculty <a href="https://www.ntnu.edu/nv">here</a>.
+                The DnaQ926 is a dominant negative variant of the <i>Escherichia coli</i> DNA pol III proofreading domain. Dam has a
+                strong mutator effect due to impaired mismatch repair. The SeqA protein negatively regulates the initiation
+                of DNA replication at the origin of replication. A low expression of SeqA reduces the transcription of
+                the MP6 plasmid in absence of arabinose. The EmrR gene codes for a protein that compromises intracellular
+                dNTP pools. Ugi codes for a protein that inhibit Ung, a mutagenesis preventing enzyme, through mimicry
+                of structural and electronic features of uracil-containing DNA. CDA1 codes for a cytidine deaminase
+                that is reported to promote the mutation of both prokaryotic and eukaryotic genomic DNA.[1]
+                <br><br>
+                The biobrick is based on the MP6 plasmid from addgene (Addgene plasmid # 69669). The original plasmid
+                was changed in order to make it a biobrick. The change done to the plasmid was removing a Spel restriction
+                site by changing an A to a C (nucleotide number 4971 in the original MP6 plasmid). A biobrick prefix was
+                also added in front of the araC gene and a biobrick suffix after the CDA1 gene.
+                <br><br><br>                 
+                <u>Source:</u><br>
+                [1] Development of potent in vivo mutagenesis plasmids with broad mutational spectra. Badran AH, Liu DR. 
+                Nat Commun. 2015 Oct 7;6:8425. doi: 10.1038/ncomms9425. 10.1038/ncomms9425 PubMed 26443021
             </p>
         </div>
 
@@ -277,161 +320,26 @@
             <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
         </div>
 
-		<div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/8/8a/T--NTNU_Trondheim--IBT-logo_light_version.jpg">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>The Department for Biotechnology and Food Science</b> is one of the eight departments at 
-				the Faculty of Natural Sciences at our university (NTNU), and they have provided our
-				iGEM team with funding and laboratory space during the project. We would also like to 
-				thank the members of the department that contributed with their knowledge, 
-				encouragement and support!
-                <br><br>
-                Read more about the department <a href="http://www.ntnu.edu/ibt">here</a>.
-            </p>
-        </div>
 
-
-        <div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
-        </div>
-
-        <div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/0/04/T--NTNU_Trondheim--DLN_white_version.png">
-        </div>
-		
         <div class="paragraph_no_img">
+            <h1>Characterization of the Lux Operon biobrick</h1>
             <p>
-                <b>The Centre for Digital Life Norway (DLN)</b> is a national centre for biotechnology education, 
-				research, and innovation. It is run as a collaborative project by the University of Oslo, 
-				the University of Bergen and NTNU, supported by the Norwegian Research Council. DLN is a 
-				virtual centre, currently involving twelve major research projects, with a constantly 
-				increasing portfolio as projects are welcome to join the centre. Thanks to DLN for their 
-				funding to our project!
+                We chose to improve this biobrick as we originally wanted to use the lux operon as a reporter for our
+                arabinose-inducible system. In this way, we could test how the expression from the pBAD promoter was
+                dependent on arabinose concentration.
                 <br><br>
-                Visit their <a href="https://digitallifenorway.org/gb/">webpage</a> for more information.
+                By looking at previous characterisation results of the biobrick, we thought it would work reasonably to
+                use DH5α competent <i>E. coli</i> cells and an incubation temperature of 37 °C. However, when testing with
+                0.01M arabinose concentrations, no observable luminescence was detected at any time after induction.
+                Therefore, we decided to characterise the biobrick by measuring the luminescence from the lux operon
+                at different arabinose concentrations and temperatures. We measured the luminescence with a Tecan M200
+                plate reader, using four different temperatures and six different arabinose concentrations. As the
+                machine could only perform heating and not cooling, it was challenging to measure at temperatures
+                below 29 °C.
+                <br><br>
+                The results are given on the biobrick <a href="http://parts.igem.org/Part:BBa_K2265000">parts page</a>.
             </p>
         </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
-        </div>
-
-        <div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/f/ff/T--NTNU_Trondheim--Vectron-logo_White_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>Vectron Biosolutions</b> was founded in 2008 as a result of more than 15 years of research in
-				Prof. Svein Valla's research group at Department of Biotechnology at NTNU. The research lead 
-				to an innovative technology for production of recombinant proteins that can be used for higher 
-				protein production levels at lower costs, and is Vectron’s core technology today. Thanks to 
-				Vectron Biosolutions for their funding to our project!
-                <br><br>
-                Visit their <a href="http://www.vectronbiosolutions.com/">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-        <div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
-        </div>
-		
-        <div class="image" style="width: 40%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/e/e8/T--NTNU_Trondheim--NBS-logo_white_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>Norsk Biokjemisk Selskap (Norwegian Biochemical Society)</b> is a society that aims to promote
-				biochemistry in Norway. The corporation represents Norwegian biochemistry and stays in contact
-				with international biochemistry organizations. We appreciate their funding to our iGEM team!
-                <br><br>
-                Check out their <a href="http://www.biokjemisk.no/">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
-        </div>
-
-        <div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/f/f3/T--NTNU_Trondheim--AquaGen-logo_White_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>AquaGen</b> is a breeding company which develops, produces and delivers genetic material to 
-				the global sea-farming industry. Through a market-oriented research and development
-				AquaGen has achieved a leading position as a provider of fertilized eggs of Atlantic 
-				salmon and rainbow trout. We would like to thank AquaGen for their funding to our project!
-                <br><br>
-                Check out their <a href="http://aquagen.no/en/">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
-        </div>
-		
-        <div class="image" style="width: 60%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/9/91/T--NTNU_Trondheim--IMR-logo_white_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                With a staff of almost 750, the <b>Institute of Marine Research (IMR)</b> is Norway's largest
-				centre of marine science. Their main task is to provide advice to Norwegian authorities 
-				on aquaculture and the ecosystems of the Barents Sea, the Norwegian Sea, the North Sea 
-				and the Norwegian coastal zone. For this reason, about fifty percent of their activities
-				are financed by the Ministry of Trade, Industry and Fisheries. We appreciate their funding
-				to our project!
-                <br><br>
-                Visit their <a href="http://www.imr.no/en">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
-        </div>
-
-        <div class="image" style="width: 40%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/9/96/T--NTNU_Trondheim--Skretting_logo_White.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-               <b> Skretting </b> is the world leader in the manufacture and supply of aquaculture feeds, making us an essential
-			   link in the feed-to-food chain. They apply their knowledge of ingredients and the nutritional needs of
-			   fish and shrimp to develop  innovations that achieve optimum nutritional value, sustainable production 
-			   and economic performance as they seek to fulfil their company-wide mission of ‘Feeding the Future’. 
-			   We appreciate their funding to our project!
-                <br><br>
-                Visit their <a href="http://www.skretting.com/en">webpage</a> for more information.
-            </p>
-        </div>
-		
 
         <div class="footer">
             <img src="http://2017.igem.org/wiki/images/7/7c/T--NTNU_Trondheim--splitter_footer.svg">

@@ -7,7 +7,11 @@
         grey: #808080
 -->
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <!-- Preloaded elements which is added dynamically to the page, and as such might be needed before normally loaded -->
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/3/3a/T--NTNU_Trondheim--arrow_down_black.png">
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/8/85/T--NTNU_Trondheim--arrow_up_black.png">
+    <link rel="preload" as="image" href="http://2017.igem.org/wiki/images/d/d2/T--NTNU_Trondheim--arrow_up_grey.png">
     <!--stylesheets etc -->
     <link rel="stylesheet" type="text/css"
           href="http://2017.igem.org/Template:NTNU_Trondheim/CSS/global?action=raw&ctype=text/css" />
@@ -25,6 +29,8 @@
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
     <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/picture_field_resize?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/slideshow?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="http://2017.igem.org/Template:NTNU_Trondheim/JS/show_more_text?action=raw&ctype=text/javascript"></script>
 </head>
 <body>
 <div id="page_content_container">
@@ -59,7 +65,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="has-sub">
+                <li class="has-sub active">
                     <div>
                         <span>
                             Project
@@ -147,7 +153,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class='has-sub active'>
+                <li class='has-sub'>
                     <div>
                         <span>
                             People
@@ -218,7 +224,7 @@
         </div>
     </div>
 
-     <div id="picture_field">
+    <div id="picture_field">
         <div id="triangle_topright">
             <img src="http://2017.igem.org/wiki/images/e/e6/T--NTNU_Trondheim--top_right_triangle.svg">
         </div>
@@ -232,7 +238,7 @@
             <!-- example of slideshow of 1, ie. only a picture. If you wish to make slideshow again, remember to comment
             back the slideshow.js script in the head section-->
             <!-- dimensions 2:1 must be honored for ALL pictures added to slideshow -->
-            <img src="http://2017.igem.org/wiki/images/8/85/T--NTNU_Trondheim--Sponsors.jpg">
+            <img src="http://2017.igem.org/wiki/images/f/f9/T--NTNU_Trondheim--Background.jpg">
         </div>
     </div>
 
@@ -242,34 +248,98 @@
         </div>
 
         <div class="paragraph_no_img">
-            <h1>Sponsors</h1>
+            <h1>Antibiotics resistance – a big, global challenge</h1>
             <p>
-                Our sincerest thanks to everyone who helped to fund our project. Without their support, 
-				none of what we have achieved would have been possible.
+                Antibiotic resistance is poised to become one of the greatest dangers of our time. Since its discovery
+                in 1928, antibiotics have been our first line of defense against bacterial infections. Antibiotics have
+                saved countless lives, and made difficult and complex surgeries possible [1]. For half a century we have
+                enjoyed the golden age of antibiotics where we have had no reason to fear bacterial infections. But this
+                golden age is coming to an end. Widespread misuse of antibiotics, coupled with minimal investment in new
+                treatments have allowed pathogenic bacteria to develop resistances to many antibiotics. Our best defense
+                against the bacteria have now created one of our greatest medical threats. [2]
             </p>
         </div>
 
+        <div class="dropdown_paragraph">
+            <div class="slidedown_button">
+                <p class="show_more">Show more</p>
+                <img src="http://2017.igem.org/wiki/images/7/72/T--NTNU_Trondheim--arrow_down_grey.png">
+                <p class="show_less">Show less</p>
+            </div>
+            <div class="dropdown_text">
+                <div class="paragraph_no_img">
+                    <p>
+                        The Infectious Disease Society of America (IDSA) have confirmed that the United States and the
+                        rest of the world are amid an emerging crisis of antibiotic resistance for microbial pathogens
+                        [2]. In 2016 the World Health Organization (WHO) stated that antibiotic resistance is one of the
+                        biggest threats to global health, food security, and development today. [3]
+                        <br><br>
+                        As antibiotics are losing their effect, invasive surgeries such as organ transplants, joint
+                        replacements and cardiac surgeries will become difficult and expensive. People undergoing
+                        chemotherapy or taking any immunosuppressants will be in a lot more danger of contracting
+                        deadly infections. An increasing number of infections, such as pneumonia, gonorrhea and
+                        tuberculosis, are becoming difficult to treat because the antibiotics previously used are
+                        starting to become less effective [3]. The threat of antibiotic resistance has led to policies
+                        for restrictive use of antibiotics, but many countries have already given up the battle against
+                        certain antibiotic resistant bacteria, such as MRSA (Methicillin-resistant Staphylococcus aureus),
+                        common in hospitals. If these policies fail, the need for an alternative will be vital.
+                    </p>
+                </div>
+                <div class="dropdown_collapse">
+                    Hide
+                </div>
+            </div>
+        </div>
 
-        <div class="break_1">
+        <div class="break_2">
             <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
         </div>
 
-		<div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/a/ae/T--NTNU_Trondheim--Faculty_logo_white.png">
-        </div>
-		
+
         <div class="paragraph_no_img">
+            <h1>Bacteriophages as an alternative to antibiotics</h1>
             <p>
-                <b>The Faculty of Natural Sciences</b> at our university (NTNU) performs research that addresses 
-				global challenges in energy, climate, environment, food, water, health and welfare. Their 
-				activities range from basic research within biology, physics and chemistry, to enabling 
-				technologies such as biotechnology, materials technology and nanotechnology. They have 
-				provided our project with funding, which we highly appreciate.
-                <br><br>
-                Read more about the faculty <a href="https://www.ntnu.edu/nv">here</a>.
+                Fortunately, antibiotics are not the only natural enemies of bacteria. Bacteriophages, or phages for
+                short, are tiny, bacteria-specific viruses capable of infecting selected bacteria while leaving other
+                bacteria, as well as animal and plant cells, unharmed. They are one of the most widespread biological
+                units in the biosphere, and exist anywhere bacteria can be found, for instance in soil, water and animal
+                intestines. In nature there is a continuous battle between phages and bacteria, with the consequence
+                that for every bacterium there probably exists one bacteriophage capable of killing it. Bacteriophages
+                might therefore be an interesting topic to look into in the search for alternatives to antibiotics.
             </p>
+        </div>
+
+        <div class="dropdown_paragraph">
+            <div class="slidedown_button">
+                <p class="show_more">Show more</p>
+                <img src="http://2017.igem.org/wiki/images/7/72/T--NTNU_Trondheim--arrow_down_grey.png">
+                <p class="show_less">Show less</p>
+            </div>
+            <div class="dropdown_text">
+                <div class="paragraph_no_img">
+                    <p>
+                        The bacteriophages were discovered in the beginning of the 20th century, and scientists early
+                        suggested using them to counter bacterial infections. With the discovery of antibiotics, however,
+                        scientists in the Western world lost the interest in bacteriophages, and the research on phages
+                        was primarily conducted in the Soviet union, especially in what is now the country of Georgia.
+                        During the second world war, Soviet soldiers used bacteriophages as treatment for infections,
+                        and there still exists a phage therapy center in Tbilisi, Georgia today [4]. Phage therapy had
+                        a bad reputation for a long time, mostly because of poor documentation and research methods,
+                        but currently, under the threat of antibiotic resistance, the interest in bacteriophages is
+                        rising once again.[5]
+                        <br><br>
+                        Phage therapy does however have several issues to be ironed out before becoming a mainstream
+                        medical treatment.[5] One major stumbling block for phage therapy is the high host specificity
+                        of phages. Most phages can only infect certain strains of a bacterial species. This creates the
+                        need for either large libraries of potential phages, or a quick method of developing a phage
+                        capable of fighting a given bacterial infection. In order to solve this problem, our project
+                        attempts to investigate the latter method.
+                    </p>
+                </div>
+                <div class="dropdown_collapse">
+                    Hide
+                </div>
+            </div>
         </div>
 
 
@@ -277,161 +347,22 @@
             <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
         </div>
 
-		<div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/8/8a/T--NTNU_Trondheim--IBT-logo_light_version.jpg">
-        </div>
-		
         <div class="paragraph_no_img">
+            <h1>References</h1>
             <p>
-                <b>The Department for Biotechnology and Food Science</b> is one of the eight departments at 
-				the Faculty of Natural Sciences at our university (NTNU), and they have provided our
-				iGEM team with funding and laboratory space during the project. We would also like to 
-				thank the members of the department that contributed with their knowledge, 
-				encouragement and support!
+                [1] Golkar, Z., Bagasra, O., Pace, D. G. (2014). Bacteriophage therapy: a potential solution for the antibiotic resistance crisis. J infect Dev Ctries, 8(2), 129-136. doi: 10.3855/jidc.3573
                 <br><br>
-                Read more about the department <a href="http://www.ntnu.edu/ibt">here</a>.
-            </p>
-        </div>
+                [2] Infectious  Diseases  Society  of  America  (2004) Bad  bugs,  no drugs:  as antibiotic  discovery  stagnates,  a  public health  crisis brews.  Alexandria,  Infectious  Diseases  Society  of  America. Available at http://www.fda.gov/ohrms/dockets/dockets/04s0233/04s-0233-c000005-03-IDSA-vol1.pdf
+                <br><br>
+                [3] World Health Organization (2017). Antibiotic resistance. Available at: http://www.who.int/mediacentre/factsheets/antibiotic-resistance/en/
+                <br><br>
+                [4] Phage therapy center (2000-2017). Available at:
+                https://www.phagetherapycenter.com/pii/PatientServlet?command=static_home
+                <br><br>
+                [5] Sulakvelidze, A., Alavidze, Z., Morris, J. G. (2001). Bacteriophage Therapy. Antimicrob Agents Chemother, 45(3), 649-659. doi: 10.1128/AAC.45.3.649-659.2001
 
-
-        <div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
-        </div>
-
-        <div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/0/04/T--NTNU_Trondheim--DLN_white_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>The Centre for Digital Life Norway (DLN)</b> is a national centre for biotechnology education, 
-				research, and innovation. It is run as a collaborative project by the University of Oslo, 
-				the University of Bergen and NTNU, supported by the Norwegian Research Council. DLN is a 
-				virtual centre, currently involving twelve major research projects, with a constantly 
-				increasing portfolio as projects are welcome to join the centre. Thanks to DLN for their 
-				funding to our project!
-                <br><br>
-                Visit their <a href="https://digitallifenorway.org/gb/">webpage</a> for more information.
             </p>
         </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
-        </div>
-
-        <div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/f/ff/T--NTNU_Trondheim--Vectron-logo_White_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>Vectron Biosolutions</b> was founded in 2008 as a result of more than 15 years of research in
-				Prof. Svein Valla's research group at Department of Biotechnology at NTNU. The research lead 
-				to an innovative technology for production of recombinant proteins that can be used for higher 
-				protein production levels at lower costs, and is Vectron’s core technology today. Thanks to 
-				Vectron Biosolutions for their funding to our project!
-                <br><br>
-                Visit their <a href="http://www.vectronbiosolutions.com/">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-        <div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
-        </div>
-		
-        <div class="image" style="width: 40%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/e/e8/T--NTNU_Trondheim--NBS-logo_white_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>Norsk Biokjemisk Selskap (Norwegian Biochemical Society)</b> is a society that aims to promote
-				biochemistry in Norway. The corporation represents Norwegian biochemistry and stays in contact
-				with international biochemistry organizations. We appreciate their funding to our iGEM team!
-                <br><br>
-                Check out their <a href="http://www.biokjemisk.no/">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
-        </div>
-
-        <div class="image" style="width: 50%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/f/f3/T--NTNU_Trondheim--AquaGen-logo_White_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                <b>AquaGen</b> is a breeding company which develops, produces and delivers genetic material to 
-				the global sea-farming industry. Through a market-oriented research and development
-				AquaGen has achieved a leading position as a provider of fertilized eggs of Atlantic 
-				salmon and rainbow trout. We would like to thank AquaGen for their funding to our project!
-                <br><br>
-                Check out their <a href="http://aquagen.no/en/">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/5/52/T--NTNU_Trondheim--splitter_2.svg">
-        </div>
-		
-        <div class="image" style="width: 60%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/9/91/T--NTNU_Trondheim--IMR-logo_white_version.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-                With a staff of almost 750, the <b>Institute of Marine Research (IMR)</b> is Norway's largest
-				centre of marine science. Their main task is to provide advice to Norwegian authorities 
-				on aquaculture and the ecosystems of the Barents Sea, the Norwegian Sea, the North Sea 
-				and the Norwegian coastal zone. For this reason, about fifty percent of their activities
-				are financed by the Ministry of Trade, Industry and Fisheries. We appreciate their funding
-				to our project!
-                <br><br>
-                Visit their <a href="http://www.imr.no/en">webpage</a> for more information.
-            </p>
-        </div>
-		
-		
-		<div class="break_1">
-            <img src="http://2017.igem.org/wiki/images/6/6d/T--NTNU_Trondheim--splitter_1.svg">
-        </div>
-
-        <div class="image" style="width: 40%;margin-top: 5em">
-            <!-- The width of the page the picture will occupy. The height is calculated from it to honor the source dimensions. Should NOT exceed 70%-->
-            <!-- margin-top and margin-bottom should be set to reach a suitable amount of whitespace, depending on the image location. 0 by default -->
-            <img src="http://2017.igem.org/wiki/images/9/96/T--NTNU_Trondheim--Skretting_logo_White.png">
-        </div>
-		
-        <div class="paragraph_no_img">
-            <p>
-               <b> Skretting </b> is the world leader in the manufacture and supply of aquaculture feeds, making us an essential
-			   link in the feed-to-food chain. They apply their knowledge of ingredients and the nutritional needs of
-			   fish and shrimp to develop  innovations that achieve optimum nutritional value, sustainable production 
-			   and economic performance as they seek to fulfil their company-wide mission of ‘Feeding the Future’. 
-			   We appreciate their funding to our project!
-                <br><br>
-                Visit their <a href="http://www.skretting.com/en">webpage</a> for more information.
-            </p>
-        </div>
-		
 
         <div class="footer">
             <img src="http://2017.igem.org/wiki/images/7/7c/T--NTNU_Trondheim--splitter_footer.svg">
