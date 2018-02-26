@@ -1,8 +1,8 @@
-#menu{
+#menu {
     position: fixed;
     z-index: 9999;
     top: 18px;
-    width:inherit;
+    width: inherit;
     align-content: right;
 }
 
@@ -10,7 +10,7 @@
 #cssmenu ul,
 #cssmenu li,
 #cssmenu a,
-#cssmenu div{
+#cssmenu div {
     border: none;
     line-height: 1;
     margin: 0;
@@ -24,11 +24,13 @@
     margin: 0;
     padding: 0;
 }
+
 #cssmenu > ul {
     list-style: inside none;
     margin: 0;
     padding: 0;
 }
+
 #cssmenu > ul > li {
     list-style: inside none;
     float: right;
@@ -51,7 +53,7 @@
     font-family: Arial, Helvetica, sans-serif;
     border-right: 1px solid #080808;
     color: #ffffff;
-    padding: 12px 20px;
+    padding: 11px 20px;
 }
 
 #cssmenu > ul > li > a:after {
@@ -59,7 +61,6 @@
     position: absolute;
     border-right: 1px solid;
     top: -1px;
-    bottom: -1px;
     right: -2px;
     z-index: 99;
     border-color: #101417;
@@ -105,7 +106,7 @@
     display: none;
     width: auto;
     position: absolute;
-    top: 38px;
+    top: 37px;
     background: #3f3f3f;
     border-radius: 0 0 5px 5px;
     z-index: 999;
@@ -113,7 +114,7 @@
 }
 
 #cssmenu ul li > ul {
-    width: 150px;  /* Width of submenu fields*/
+    width: 150px; /* Width of submenu fields*/
 }
 
 #cssmenu ul li > ul li {
@@ -150,6 +151,6 @@
     border-top: 5px solid #ffffff;
 }
 
-.active{
+.active {
     background: #3f3f3f;
 }

@@ -26,8 +26,8 @@ $(document).on("click", ".dropdown_collapse", function () {
     $(this).parent().slideUp(slideTime);
     $(this).parent().prev().removeClass("slideup_button");
     $(this).parent().prev().addClass("slidedown_button");
-    if(pagePosition > elementOffset){
-        $("html,body").animate({scrollTop:elementOffset}, slideTime);
+    if (pagePosition > elementOffset) {
+        $("html,body").animate({scrollTop: elementOffset}, slideTime);
     }
     $(this).parent().prev().children(':nth-child(3)').hide();
     $(this).parent().prev().children(':nth-child(1)').show();

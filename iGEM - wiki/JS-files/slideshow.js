@@ -14,10 +14,14 @@ function showDivs(n) {
     var active;
     var x = document.getElementsByClassName("slideshow_picture");
     var dots = document.getElementsByClassName("dot");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
+    if (n > x.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = x.length
+    }
     for (i = 0; i < x.length; i++) {
-        if (x[i].style.display === "inline"){
+        if (x[i].style.display === "inline") {
             active = x[i];
         }
     }
@@ -25,9 +29,9 @@ function showDivs(n) {
         dots[i].className = dots[i].className.replace(" current_dot", "");
     }
     $(active).fadeOut(500, function () {
-        $(x[slideIndex-1]).fadeIn(500);
+        $(x[slideIndex - 1]).fadeIn(500);
     });
-    dots[slideIndex-1].className += " current_dot";
+    dots[slideIndex - 1].className += " current_dot";
     clearTimeout(Carousel_timer);
     Carousel_timer = setTimeout(carousel, 10000); // wait 10 seconds for next automatic image change
 }

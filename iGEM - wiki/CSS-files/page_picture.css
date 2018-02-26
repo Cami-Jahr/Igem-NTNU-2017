@@ -1,4 +1,4 @@
-#page_content_container{
+#page_content_container {
     width: 60%;
     margin: 0 auto;
     background-color: whitesmoke;
@@ -10,7 +10,7 @@
     border-color: black;
 }
 
-#picture_field{
+#picture_field {
     width: 100%;
     position: relative;
     z-index: 2;
@@ -18,12 +18,13 @@
 }
 
 #triangle_topleft,
-#triangle_topright{
+#triangle_topright {
     position: absolute;
     z-index: 1;
 }
+
 #triangle_topleft > img,
-#triangle_topright > img{
+#triangle_topright > img {
     width: 100%;
     z-index: auto;
 }
@@ -37,74 +38,75 @@
     width: 30%;
 }
 
-#icon{
+#icon {
     width: 24%;
     position: absolute;
     z-index: 2;
 }
 
-#icon > img{
+#icon > img {
     z-index: auto;
     width: 100%;
 }
 
-#slideshow_container{
+#slideshow_container {
     position: absolute;
     width: 100%;
     z-index: 0;
     background-color: #101417;
 }
-#slideshow_container > img{
+
+#slideshow_container > img {
     z-index: auto;
     width: 100%;
 }
 
-.slideshow_picture{
+.slideshow_picture {
     display: none;
 }
 
 .dot {
-    height:13px;
-    width:13px;
-    padding:0;
-    color:#fff;
-    display:inline-block;
-    border-radius:50%;
-    background-color:transparent!important;
-    border:1px solid #ccc!important;
+    height: 13px;
+    width: 13px;
+    padding: 0;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: transparent !important;
+    border: 1px solid #ccc !important;
 }
 
 .dot:hover,
-.current_dot{
-    background-color:#fff!important
+.current_dot {
+    background-color: #fff !important
 }
 
 .arrow-left,
 .arrow-right,
 .dot {
-    cursor:pointer
+    cursor: pointer
 }
 
-.arrow-left{
-    float:left
+.arrow-left {
+    float: left
 }
 
-.arrow-right{
-    float:right
+.arrow-right {
+    float: right
 }
 
 .arrow-left:hover,
-.arrow-right:hover{
-    color:#757575
+.arrow-right:hover {
+    color: #757575
 }
 
-.slider_select{
-    text-align:center;
+.slider_select {
+    text-align: center;
     font-size: 20px;
-    color:#fff;
-    position:absolute;
-    left:50%;
-    bottom:10%;
-    transform:translate(-50%,0%);
-    -ms-transform:translate(-50%,0%);
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
 }
